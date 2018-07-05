@@ -535,8 +535,10 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'uri',
+            'type' => 'message',
             'label' => 'view detail',
-            'uri' => 'line.me/ti/p/~heefpuy',
+            'uri' => 'https://line.me/ti/p/~heefpuy',
+            'text' => 'KLIK DISINI',
           ),
         ),
       ),
