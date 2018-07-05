@@ -527,7 +527,7 @@ if ($command == '#menu') {
         'defaultAction' =>
         array (
           'type' => 'uri',
-          'label' => 'https://line.me/ti/p/~heefpuy',
+          'label' => 'View detail',
           'uri' => 'https://line.me/ti/p/~heefpuy',
         ),
         'actions' =>
@@ -535,7 +535,7 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'KLIK DISINI',
+            'label' => 'CONTOH',
             'text' => '#creator',
           ),
         ),
