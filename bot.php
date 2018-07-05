@@ -999,12 +999,15 @@ if($message['type']=='text') {
                 array(
 
 										'type' => 'text',					
-										'text' => '「 Creator 」
+										'text' => '「 About PUY 」
 
-Creator by PUY
-
+EN : [ Made by PUY ]
 The Beginning of this Bot Comes from Rynda, Im just Reworked This!
-Of Course Special Thanks To Ryndaaaaa, And the Friends Around Me!'
+Of Course Special Thanks To Allah SWT, Ryndaaaaa, And the Friends Around Me!
+
+ID : [ Dibuat oleh PUY ]
+Awal Bot Ini Berasal dari Rynda, Saya Hanya Menrakit Ini!
+Terima Kasih Kepada Allah SWT, Ryndaaaaa, Dan Teman-Teman Di Sekitar Saya!'
 									)
 							)
 						);
