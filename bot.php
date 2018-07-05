@@ -448,8 +448,8 @@ if ($command == '#menu') {
       array (
         'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
         'imageBackgroundColor' => '#00FFFF',
-        'title' => 'INSTAGRAM',
-        'text' => 'Stalk Instagram Akun',
+        'title' => 'CREATOR BOT',
+        'text' => 'Menampilkan Creator Bot',
         'defaultAction' =>
         array (
           'type' => 'uri',
@@ -461,8 +461,8 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
-            'text' => '#instainfo muh.khadaffy',
+            'label' => 'KLIK',
+            'text' => '#creator',
           ),
         ),
       ),
@@ -684,7 +684,7 @@ if ($command == '#menu2') {
     'type' => 'carousel',
     'columns' =>
     array (
-        0 =>
+        10 =>
       array (
         'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
         'imageBackgroundColor' => '#00FFFF',
@@ -706,7 +706,7 @@ if ($command == '#menu2') {
           ),
         ),
       ),
-       1 =>
+       11 =>
       array (
         'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
         'imageBackgroundColor' => '#00FFFF',
@@ -728,7 +728,7 @@ if ($command == '#menu2') {
           ),
         ),
       ),
-      2 =>
+      12 =>
       array (
         'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
         'imageBackgroundColor' => '#00FFFF',
