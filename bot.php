@@ -522,23 +522,21 @@ if ($command == '#menu') {
       array (
         'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
-        'title' => 'CREATOR BOT',
-        'text' => 'Menampilkan pembuat Bot',
+        'title' => 'PEMBUAT PUY',
+        'text' => 'KLIK DISINI',
         'defaultAction' =>
         array (
           'type' => 'uri',
           'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
+          'uri' => 'https://line.me/ti/p/~heefpuy',
         ),
         'actions' =>
         array (
           0 =>
           array (
-            'type' => 'uri',
             'type' => 'message',
-            'label' => 'view detail',
-            'uri' => 'https://line.me/ti/p/~heefpuy',
-            'text' => 'KLIK DISINI',
+            'label' => 'https://line.me/ti/p/~heefpuy',
+            'text' => '#creator',
           ),
         ),
       ),
