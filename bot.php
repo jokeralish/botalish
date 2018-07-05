@@ -494,7 +494,7 @@ function jawabs(){
 # require_once('./src/function/search-2.php');
 # require_once('./src/function/hard.php');
 if ($type == 'join') {
-    $text = "Terimakasih sudah mengundang Puy ke Grup\n\nInfo perintah Puy :\n#menu\n#Creator\n#myinfo";
+    $text = "Terimakasih sudah mengundang Puy ke Grup\n\nInfo perintah Puy :\n#menu\n#about\n#myinfo";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -535,12 +535,12 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
-            'text' => '#creator',
+            'label' => 'ABOUT PUY',
+            'text' => '#about',
           ),
         ),
       ),
-       1 =>
+      1 =>
       array (
         'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
         'imageBackgroundColor' => '#00FFFF',
@@ -991,7 +991,7 @@ Picture : '.$profil->pictureUrl.'
     }
 }
 if($message['type']=='text') {
-	    if ($command == '#creator') {
+	    if ($command == '#about') {
 
         $balas = array(
             'replyToken' => $replyToken,
