@@ -154,7 +154,7 @@ function youtubelist($keyword) {
 }
 
 function music($keyword) { 
-    $uri = "http://ide.fdlrcn.com/workspace/yumi-apis/joox?songname=" . $keyword . ""; 
+    $uri = "http://api.ntcorp.us/joox/search?q=" . $keyword . ""; 
  
     $response = Unirest\Request::get("$uri"); 
  
@@ -213,7 +213,7 @@ function image_neon($keyword) {
 }
 
 function bodybuilder($keyword) {
-    $uri = "ari-api.herokuapp.com/bodybuilder?url=" . $keyword;
+    $uri = "https://ari-api.herokuapp.com/bodybuilder?url=" . $keyword;
     return $uri;
 }
 
@@ -964,7 +964,6 @@ Of Course Special Thanks To Ryndaaaaa, And the Friends Around Me!'
 //fitur qr
 if($message['type']=='text') {
 	    if ($command == '#qr') {
-
         $result = qrcode($options);
         $balas = array(
             'replyToken' => $replyToken,
@@ -981,7 +980,6 @@ if($message['type']=='text') {
 //fitur zodiak
 if($message['type']=='text') {
 	    if ($command == '#zodiak') {
-
         $result = zodiak($options);
         $balas = array(
             'replyToken' => $replyToken,
@@ -1042,8 +1040,6 @@ if($message['type']=='text') {
 //fitur definisi
 if ($message['type'] == 'text') {
     if ($command == '#definisi') {
-
-
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
@@ -1058,7 +1054,6 @@ if ($message['type'] == 'text') {
 //fitur yt-get
 if($message['type']=='text') {
 	    if ($command == '/ytget') {
-
         $result = ytdownload($options);
         $balas = array(
             'replyToken' => $replyToken,
