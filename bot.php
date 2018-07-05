@@ -177,8 +177,21 @@ function urb_dict($keyword) {
 
     $json = json_decode($response->raw_body, true);
     $result = $json['list'][0]['definition'];
-    $result .= "\n\nExamples : \n";
+    $result .= "\n\nContoh : \n";
     $result .= $json['list'][0]['example'];
+    return $result;
+}
+
+function quotes($keyword) {
+    $uri = "http://quotes.rest/qod.json?category=" . $keyword;
+    $response = Unirest\Request::get("$uri");
+    $json = json_decode($response->raw_body, true);
+    $result = "Result : ";
+	$result .= $json['success']['total'];
+	$result .= "\n-Quotes : ";
+	$result .= $json['contents']['quotes']['quote'];
+	$result .= "\n-Author : ";
+	$result .= $json['contents']['quotes']['author'];
     return $result;
 }
 
@@ -672,7 +685,7 @@ if ($command == '#menu') {
 )
 );
 }
-if ($command == '#menu2') {
+if ($command == '#menus') {
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -724,7 +737,7 @@ if ($command == '#menu2') {
           array (
             'type' => 'message',
             'label' => 'CONTOH',
-            'text' => '#filminfo kuntilanak',
+            'text' => '#filminfo warkop dki',
           ),
         ),
       ),
@@ -847,6 +860,21 @@ if($message['type']=='text') {
                 array(
                     'type' => 'text',
                     'text' => $result
+                )
+            )
+        );
+    }
+}
+//fitur quotes
+if($message['type']=='text') {
+        if ($command == '#quotes') {
+        $result = quotes($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text'  => $result
                 )
             )
         );
