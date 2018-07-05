@@ -236,6 +236,57 @@ function zodiak($keyword) {
     return $result;
 }
 
+function manga($keyword) {
+
+    $fullurl = 'https://myanimelist.net/api/manga/search.xml?q=' . $keyword;
+    $username = 'jamal3213';
+    $password = 'FZQYeZ6CE9is';
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_VERBOSE, 1);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_USERPWD, "$username:$password");
+    curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+    curl_setopt($ch, CURLOPT_URL, $fullurl);
+
+    $returned = curl_exec($ch);
+    $xml = new SimpleXMLElement($returned);
+    $parsed = array();
+
+    $parsed['id'] = (string) $xml->entry[0]->id;
+    $parsed['image'] = (string) $xml->entry[0]->image;
+    $parsed['title'] = (string) $xml->entry[0]->title;
+    $parsed['desc'] = "Episode : ";
+    $parsed['desc'] .= $xml->entry[0]->episodes;
+    $parsed['desc'] .= "\nNilai : ";
+    $parsed['desc'] .= $xml->entry[0]->score;
+    $parsed['desc'] .= "\nTipe : ";
+    $parsed['desc'] .= $xml->entry[0]->type;
+    $parsed['synopsis'] = str_replace("<br />", "\n", html_entity_decode((string) $xml->entry[0]->synopsis, ENT_QUOTES | ENT_XHTML, 'UTF-8'));
+    return $parsed;
+}
+
+function ps($keyword) { 
+    $uri = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20171227T171852Z.fda4bd604c7bf41f.f939237fb5f802608e9fdae4c11d9dbdda94a0b5&text=" . $keyword . "&lang=id-id"; 
+ 
+    $response = Unirest\Request::get("$uri"); 
+ 
+    $json = json_decode($response->raw_body, true); 
+    $result .= "-Nama : ";
+    $result .= $json['text']['0'];
+    $result .= "\n-Link: ";
+    $result .= "https://play.google.com/store/search?q=" . $keyword . "";
+    $result .= "\n\nPencarian : PlayStore";
+    return $result; 
+}
+
+function manga_syn($title) {
+    $parsed = manga($title);
+    $result = "-Judul : " . $parsed['title'];
+    $result .= "\n\n-Sinopsis :\n" . $parsed['synopsis'];
+    return $result;
+}
+
 function jadwaltv() {
     $uri = "https://ari-api.herokuapp.com/jadwaltv";
     $response = Unirest\Request::get("$uri");
@@ -483,9 +534,9 @@ if ($command == '#menu') {
         array (
           0 =>
           array (
-            'type' => 'message',
-            'label' => 'KLIK',
-            'text' => '#creator',
+            'type' => 'uri',
+            'label' => 'view detail',
+            'uri' => 'line.me/ti/p/~heefpuy',
           ),
         ),
       ),
@@ -515,8 +566,8 @@ if ($command == '#menu') {
       array (
         'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
         'imageBackgroundColor' => '#00FFFF',
-        'title' => 'ZODIAK',
-        'text' => 'Menampilkan zodiak',
+        'title' => 'PLAYSTORE',
+        'text' => 'Mencari isi PlayStore',
         'defaultAction' =>
         array (
           'type' => 'uri',
@@ -529,7 +580,7 @@ if ($command == '#menu') {
           array (
             'type' => 'message',
             'label' => 'CONTOH',
-            'text' => '#zodiak taurus',
+            'text' => '#playstore tiktok ',
           ),
         ),
       ),
@@ -802,7 +853,6 @@ if($message['type']=='text') {
 //fitur musik
 if($message['type']=='text') {
 	    if ($command == '#carimusik') {
-
         $result = music($options);
         $balas = array(
             'replyToken' => $replyToken,
@@ -1002,6 +1052,76 @@ if($message['type']=='text') {
                 array(
                     'type' => 'text',
                     'text' => 'iya kak? Ketik #menu untuk info perintah Puy!, '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+//fitur pstore
+if($message['type']=='text') {
+	    if ($command == '#playstore') {
+
+        $result = ps($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => $result
+                )
+            )
+        );
+    }
+
+}
+//fitur manga
+if($message['type']=='text') {
+	    if ($command == '#manga') {
+        $result = manga($options);
+        $altText = "Title : " . $result['title'];
+        $altText .= "\n\n" . $result['desc'];
+        $altText .= "\nMAL Page : https://myanimelist.net/manga/" . $result['id'];
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'template',
+                    'altText' => $altText,
+                    'template' => array(
+                        'type' => 'buttons',
+                        'title' => $result['title'],
+                        'thumbnailImageUrl' => $result['image'],
+                        'text' => $result['desc'],
+                        'actions' => array(
+                            array(
+                                'type' => 'postback',
+                                'label' => 'Baca Sinopsis-nya',
+                                'data' => 'action=add&itemid=123',
+                                'text' => '/manga-syn' . $options
+                            ),
+                            array(
+                                'type' => 'uri',
+                                'label' => 'Website MAL',
+                                'uri' => 'https://myanimelist.net/manga/' . $result['id']
+                            )
+                        )
+                    )
+                )
+            )
+        );
+    }
+}
+//fitur sinopsis manga
+if($message['type']=='text') {
+	    if ($command == '#manga-syn') {
+
+        $result = manga_syn($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => $result
                 )
             )
         );
