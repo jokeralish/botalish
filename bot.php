@@ -212,6 +212,11 @@ function image_neon($keyword) {
     return $uri;
 }
 
+function bodybuilder($keyword) {
+    $uri = "ari-api.herokuapp.com/bodybuilder?url=" . $keyword;
+    return $uri;
+}
+
 function zodiak($keyword) {
     $uri = "https://script.google.com/macros/exec?service=AKfycbw7gKzP-WYV2F5mc9RaR7yE3Ve1yN91Tjs91hp_jHSE02dSv9w&nama=ervan&tanggal=" . $keyword;
 
@@ -467,7 +472,7 @@ if ($command == '#menu') {
         'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'CREATOR BOT',
-        'text' => '',
+        'text' => 'Menampilkan pembuat Bot',
         'defaultAction' =>
         array (
           'type' => 'uri',
@@ -1101,6 +1106,22 @@ if($message['type']=='text') {
 if($message['type']=='text') {
 	    if ($command == '#gambarneon') {
         $result = image_neon($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                  'type' => 'image',
+                  'originalContentUrl' => $result,
+                  'previewImageUrl' => $result
+                )
+            )
+        );
+    }
+}
+
+if($message['type']=='text') {
+	    if ($command == '#bodybuilder') {
+        $result = bodybuilder($options);
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
