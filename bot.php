@@ -182,6 +182,11 @@ function urb_dict($keyword) {
     return $result;
 }
 
+function qrcode($keyword) {
+    $uri = "http://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=" . $keyword;
+    return $uri;
+}
+
 function quotes($keyword) {
     $uri = "http://quotes.rest/qod.json?category=" . $keyword;
     $response = Unirest\Request::get("$uri");
@@ -459,10 +464,10 @@ if ($command == '#menu') {
     array (
         0 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'CREATOR BOT',
-        'text' => 'Menampilkan Creator Bot',
+        //'text' => '',
         'defaultAction' =>
         array (
           'type' => 'uri',
@@ -950,6 +955,23 @@ Of Course Special Thanks To Ryndaaaaa, And the Friends Around Me!'
 						);
 				
 	}
+}
+//fitur qr
+if($message['type']=='text') {
+	    if ($command == '#qr') {
+
+        $result = qrcode($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'image',
+                    'originalContentUrl' => $result,
+                    'previewImageUrl' => $result
+                )
+            )
+        );
+    }
 }
 //fitur zodiak
 if($message['type']=='text') {
