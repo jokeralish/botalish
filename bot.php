@@ -84,6 +84,20 @@ function film($keyword) {
 	$result .= $json['Country'];
     return $result;
 }
+function ytdownload($keyword) {
+    $uri = "http://wahidganteng.ga/process/api/b82582f5a402e85fd189f716399bcd7c/youtube-downloader?url=" . $keyword;
+    $response = Unirest\Request::get("$uri");
+    $json = json_decode($response->raw_body, true);
+    $result = "-Judul : \n";
+	$result .= $json['title'];
+	$result .= "\n-Type : ";
+	$result .= $json['data']['type'];
+	$result .= "\n-Ukuran : ";
+	$result .= $json['data']['size'];
+	$result .= "\n-Alamat : ";
+	$result .= $json['data']['link'];
+    return $result;
+}
 function insta($keyword) {
     $uri = "https://ari-api.herokuapp.com/instagram?username=" . $keyword;
     $response = Unirest\Request::get("$uri");
@@ -178,6 +192,25 @@ function google_image($keyword) {
 function image_neon($keyword) {
     $uri = "https://ari-api.herokuapp.com/neon?text=" . $keyword;	
     return $uri;
+}
+
+function zodiak($keyword) {
+    $uri = "https://script.google.com/macros/exec?service=AKfycbw7gKzP-WYV2F5mc9RaR7yE3Ve1yN91Tjs91hp_jHSE02dSv9w&nama=ervan&tanggal=" . $keyword;
+
+    $response = Unirest\Request::get("$uri");
+
+    $json = json_decode($response->raw_body, true);
+    $result = " 「 Zodiak 」 ";
+    $result .= "\n-Lahir : ";
+	$result .= $json['data']['lahir'];
+	$result .= "\n-Usia : ";
+	$result .= $json['data']['usia'];
+	$result .= "\n-Ultah : ";
+	$result .= $json['data']['ultah'];
+	$result .= "\n-Zodiak : ";
+	$result .= $json['data']['zodiak'];
+	$result .= "\n\nPencarian : Google";
+    return $result;
 }
 
 function jadwaltv() {
@@ -459,8 +492,8 @@ if ($command == '#menu') {
       array (
         'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
         'imageBackgroundColor' => '#00FFFF',
-        'title' => 'IMAGE NEON',
-        'text' => 'Menampilkan gambar neon',
+        'title' => 'ZODIAK',
+        'text' => 'Menampilkan zodiak',
         'defaultAction' =>
         array (
           'type' => 'uri',
@@ -473,7 +506,7 @@ if ($command == '#menu') {
           array (
             'type' => 'message',
             'label' => 'CONTOH',
-            'text' => '#gambarneon puy',
+            'text' => '#zodiak taurus',
           ),
         ),
       ),
@@ -639,6 +672,92 @@ if ($command == '#menu') {
 )
 );
 }
+if ($command == '#menu2') {
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+          array (
+  'type' => 'template',
+  'altText' => 'Perintah Puy',
+  'template' =>
+  array (
+    'type' => 'carousel',
+    'columns' =>
+    array (
+        0 =>
+      array (
+        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'imageBackgroundColor' => '#00FFFF',
+        'title' => 'INSTAGRAM',
+        'text' => 'Stalk Instagram Akun',
+        'defaultAction' =>
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'http://heefpuy18.eaters.me/',
+        ),
+        'actions' =>
+        array (
+          0 =>
+          array (
+            'type' => 'message',
+            'label' => 'CONTOH',
+            'text' => '#instainfo muh.khadaffy',
+          ),
+        ),
+      ),
+       1 =>
+      array (
+        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'imageBackgroundColor' => '#00FFFF',
+        'title' => 'FILM INFO',
+        'text' => 'Menampilkan info film',
+        'defaultAction' =>
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'http://heefpuy18.eaters.me/',
+        ),
+        'actions' =>
+        array (
+          0 =>
+          array (
+            'type' => 'message',
+            'label' => 'CONTOH',
+            'text' => '#filminfo kuntilanak',
+          ),
+        ),
+      ),
+      2 =>
+      array (
+        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'imageBackgroundColor' => '#00FFFF',
+        'title' => 'YtVidGet',
+        'text' => 'Mengambil video dari Youtube',
+        'defaultAction' =>
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'http://heefpuy18.eaters.me/',
+        ),
+        'actions' =>
+        array (
+          0 =>
+          array (
+            'type' => 'message',
+            'label' => 'CONTOH',
+            'text' => '#ytget garox',
+          ),
+        ),
+      ),
+    ),
+    'imageAspectRatio' => 'rectangle',
+    'imageSize' => 'cover',
+  ),
+)
+)
+);
+}
 //fitur googlemap
 if($message['type']=='text') {
 	    if ($command == '#lokasi') {
@@ -735,7 +854,7 @@ if($message['type']=='text') {
 }
 //fitur synfilm
 if($message['type']=='text') {
-        if ($command == '#film-syn') {
+        if ($command == '#filminfo') {
         $result = film_syn($options);
         $balas = array(
             'replyToken' => $replyToken,
@@ -804,6 +923,22 @@ Of Course Special Thanks To Ryndaaaaa, And the Friends Around Me!'
 				
 	}
 }
+//fitur zodiak
+if($message['type']=='text') {
+	    if ($command == '#zodiak') {
+
+        $result = zodiak($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => $result
+                )
+            )
+        );
+    }
+}
 //fitur replymsg
 if($message['type']=='text') {
 	    if ($command == 'Halo' || $command == 'Hai' || $command == 'Woi' || $command == 'Bot' ) {
@@ -860,6 +995,22 @@ if ($message['type'] == 'text') {
                 array(
                     'type' => 'text',
                     'text' => 'Definisi : ' . urb_dict($options)
+                )
+            )
+        );
+    }
+}
+//fitur yt-get
+if($message['type']=='text') {
+	    if ($command == '/ytget') {
+
+        $result = ytdownload($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => ytdownload($options)
                 )
             )
         );
