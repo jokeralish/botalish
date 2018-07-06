@@ -716,7 +716,7 @@ if ($command == '#menumedia') {
         'messages' => array(
           array (
   'type' => 'template',
-  'altText' => 'MenuMedia Puy',
+  'altText' => 'Perintah Puy',
   'template' =>
   array (
     'type' => 'carousel',
@@ -727,7 +727,7 @@ if ($command == '#menumedia') {
         'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'MEDIA',
-        'text' => '',
+        'text' => ' ',
         'defaultAction' =>
         array (
           'type' => 'uri',
@@ -739,7 +739,7 @@ if ($command == '#menumedia') {
           0 =>
           array (
             'type' => 'message',
-            'label' => '',
+            'label' => ' ',
             'text' => ' ',
           ),
         ),
@@ -787,7 +787,7 @@ if ($command == '#menumedia') {
             'text' => '#youtube sarahvilo',
           ),
         ),
-      ),      
+      ),
       3 =>
       array (
         'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
@@ -876,7 +876,7 @@ if ($command == '#about') {
       ),
     ),
     'imageAspectRatio' => 'rectangle',
-    'imageSize' => 'contain',
+    'imageSize' => 'fill',
   ),
 )
 )
