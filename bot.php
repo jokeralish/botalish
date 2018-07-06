@@ -724,8 +724,8 @@ if ($command == '#menumedia') {
     array (
         0 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        'thumbnailImageUrl' => ' ',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'MEDIA',
         'text' => ' ',
         'defaultAction' =>
@@ -854,8 +854,8 @@ if ($command == '#about') {
     array (
         0 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        'thumbnailImageUrl' => ' ',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'Pembuat PUY',
         'text' => 'Klik untuk lihat pembuat Puy',
         'defaultAction' =>
@@ -876,7 +876,7 @@ if ($command == '#about') {
       ),
     ),
     'imageAspectRatio' => 'rectangle',
-    'imageSize' => 'fill',
+    'imageSize' => 'contain',
   ),
 )
 )
