@@ -550,7 +550,7 @@ if ($command == '#menu') {
       ),
       1 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://ureechan.files.wordpress.com/2011/07/penelitian.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'DEFINISI',
         'text' => 'Menampilkan definisi',
@@ -572,7 +572,7 @@ if ($command == '#menu') {
       ),
       2 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://hd.tudocdn.net/679353?w=646&h=284',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'PLAYSTORE',
         'text' => 'Mencari isi PlayStore',
@@ -594,7 +594,7 @@ if ($command == '#menu') {
       ),
       3 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://cdn-images-1.medium.com/max/500/0*W_3koJ9hFcRFHr6l.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'GOOGLE IMAGE',
         'text' => 'Menampilkan gambar dari Google',
@@ -616,7 +616,7 @@ if ($command == '#menu') {
       ),
       4 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'http://blog.tracksmart.com/wp-content/uploads/2016/07/Employee-Time-Theft-at-Work-Robbing-Your-Business-LG.jpg.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'TIME',
         'text' => 'Menampilkan Waktu saat ini',
@@ -638,7 +638,7 @@ if ($command == '#menu') {
       ),
       5 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://thumbs.dreamstime.com/b/hand-drawn-muslim-boy-praying-vector-cartoon-illustration-have-pray-time-hands-up-air-dua-pose-back-view-101599230.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'PRAYTIME',
         'text' => 'Menampilkan Jadwal Waktu Sholat',
@@ -660,7 +660,7 @@ if ($command == '#menu') {
       ),
       6 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube-icon-our_icon.png',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'YOUTUBE',
         'text' => 'Menampilkan video video dari youtube',
@@ -682,7 +682,7 @@ if ($command == '#menu') {
       ),
       7 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'http://www.urticaria.be/wp-content/uploads/2016/04/movie.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'FILM',
         'text' => 'Mencari Film',
@@ -704,7 +704,7 @@ if ($command == '#menu') {
       ),
       8 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://cdn.pixabay.com/photo/2012/04/26/10/37/tv-41982_960_720.png',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'TV JADWAL',
         'text' => 'Menampilkan Jadwal TV',
@@ -726,7 +726,7 @@ if ($command == '#menu') {
       ),
       9 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://mobserver.co.za/wp-content/uploads/sites/92/2017/11/weather-forecast.gif',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'CUACA',
         'text' => 'Menampilkan Cuaca',
@@ -768,7 +768,7 @@ if ($command == '#menus') {
     array (
         0 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://files.hiv.gov/s3fs-public/instagramlogoresized-1.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'INSTAGRAM',
         'text' => 'Stalk Instagram Akun',
@@ -790,7 +790,7 @@ if ($command == '#menus') {
       ),
        1 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'http://www.urticaria.be/wp-content/uploads/2016/04/movie.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'FILM INFO',
         'text' => 'Menampilkan info film',
