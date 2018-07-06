@@ -572,7 +572,7 @@ if ($command == '#menu') {
       ),
       2 =>
       array (
-        'thumbnailImageUrl' => 'https://hd.tudocdn.net/679353?w=646&h=284',
+        'thumbnailImageUrl' => 'https://www.drei.at/media/common/info/bezahlen-mit-3rechnung/play-store/google-play-store.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'PLAYSTORE',
         'text' => 'Mencari isi PlayStore',
@@ -660,7 +660,7 @@ if ($command == '#menu') {
       ),
       6 =>
       array (
-        'thumbnailImageUrl' => 'https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube-icon-our_icon.png',
+        'thumbnailImageUrl' => 'https://i.ytimg.com/vi/CVXp3ZgUIr8/maxresdefault.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'YOUTUBE',
         'text' => 'Menampilkan video video dari youtube',
@@ -704,7 +704,7 @@ if ($command == '#menu') {
       ),
       8 =>
       array (
-        'thumbnailImageUrl' => 'https://cdn.pixabay.com/photo/2012/04/26/10/37/tv-41982_960_720.png',
+        'thumbnailImageUrl' => 'https://cdn.instructables.com/FX2/IPG1/H174KLKH/FX2IPG1H174KLKH.LARGE.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'TV JADWAL',
         'text' => 'Menampilkan Jadwal TV',
@@ -726,7 +726,7 @@ if ($command == '#menu') {
       ),
       9 =>
       array (
-        'thumbnailImageUrl' => 'https://mobserver.co.za/wp-content/uploads/sites/92/2017/11/weather-forecast.gif',
+        'thumbnailImageUrl' => 'https://cms-assets.tutsplus.com/uploads/users/34/posts/28813/preview_image/weather.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'CUACA',
         'text' => 'Menampilkan Cuaca',
