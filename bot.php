@@ -122,7 +122,7 @@ function insta($keyword) {
     $result .= $json['result']['username'];
     $result .= "\n「Pengikut」 ";
     $result .= $json['result']['byline'];
-    $result .= "\n\n「 https://www.instagram.com/" . $keyword;" 」"
+    $result .= "\n\n「 https://www.instagram.com/" . $keyword . " 」";
     return $result;
 }
 
