@@ -298,70 +298,70 @@ function jadwaltv() {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Jadwal Tv 」\n\n";
-    $result .= "[ Judul ]\n";
+    $result .= "\n1) [ Judul ]\n";
     $result .= $json['result'][0]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][0]["channelName"];
     $result .= "Waktu : ";
     $result .= $json['result'][0]["jam"];
     
-    $result .= "[ Judul ]\n";
+    $result .= "\n2) [ Judul ]\n";
     $result .= $json['result'][1]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][1]["channelName"];
     $result .= "Waktu : ";
     $result .= $json['result'][1]["jam"];
     
-    $result .= "[ Judul ]\n";
+    $result .= "\n3) [ Judul ]\n";
     $result .= $json['result'][2]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][2]["channelName"];
     $result .= "Waktu : ";
     $result .= $json['result'][2]["jam"];
     
-    $result .= "[ Judul ]\n";
+    $result .= "\n4) [ Judul ]\n";
     $result .= $json['result'][3]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][3]["channelName"];
     $result .= "Waktu ";
     $result .= $json['result'][3]["jam"];
     
-    $result .= "[ Judul ]\n";
+    $result .= "\n5) [ Judul ]\n";
     $result .= $json['result'][4]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][4]["channelName"];
     $result .= "Waktu : ";
     $result .= $json['result'][4]["jam"];
     
-    $result .= "[ Judul ]\n";
+    $result .= "\n6) [ Judul ]\n";
     $result .= $json['result'][5]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][5]["channelName"];
     $result .= "Waktu : ";
     $result .= $json['result'][5]["jam"];
     
-    $result .= "[ Judul ]\n";
+    $result .= "\n7) [ Judul ]\n";
     $result .= $json['result'][7]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][7]["channelName"];
     $result .= "Waktu : ";
     $result .= $json['result'][7]["jam"];
     
-    $result .= "[ Judul ]\n";
+    $result .= "\n8) [ Judul ]\n";
     $result .= $json['result'][8]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][8]["channelName"];
     $result .= "Waktu : ";
     $result .= $json['result'][8]["jam"];
     
-    $result .= "[ Judul ]\n";
+    $result .= "\n9) [ Judul ]\n";
     $result .= $json['result'][9]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][9]["channelName"];
     $result .= "Waktu : ";
     $result .= $json['result'][9]["jam"];
     
-    $result .= "[ Judul ]\n";
+    $result .= "\n 10) [ Judul ]\n";
     $result .= $json['result'][10]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][10]["channelName"];
@@ -374,9 +374,6 @@ function shalat($keyword) {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Jadwal Waktu Sholat 」\n\n";
-	  $result .= $json['location']['address'];
-	  $result .= "\n Tanggal : ";
-	  $result .= $json['time']['date'];
 	  $result .= "\n\n Shubuh : ";
 	  $result .= $json['data']['Fajr'];
 	  $result .= "\n Dzuhur : ";
@@ -387,6 +384,9 @@ function shalat($keyword) {
 	  $result .= $json['data']['Maghrib'];
 	  $result .= "\n Isya : ";
 	  $result .= $json['data']['Isha'];
+	  $result .= $json['location']['address'];
+	  $result .= "\nTanggal : ";
+	  $result .= $json['time']['date'];
     return $result;
 }
 function cuaca($keyword) {
@@ -394,7 +394,7 @@ function cuaca($keyword) {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Cuaca 」 ";
-    $result .= "\n\nNama kota: ";
+    $result .= "\n\n Nama kota : ";
 	  $result .= $json['name'];
 	  $result .= "\n Cuaca : ";
 	  $result .= $json['weather']['0']['main'];
@@ -577,7 +577,7 @@ if ($command == '#menu') {
           array (
             'type' => 'message',
             'label' => 'CONTOH',
-            'text' => '#playstore tiktok ',
+            'text' => '#playstore aplikasi goblok ',
           ),
         ),
       ),
