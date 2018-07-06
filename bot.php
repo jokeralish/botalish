@@ -528,8 +528,30 @@ if ($command == '#menu') {
     array (
         0 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => ' ',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'MENU',
+        'text' => 'Geser untuk intip',
+        'defaultAction' =>
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => ' ',
+        ),
+        'actions' =>
+        array (
+          0 =>
+          array (
+            'type' => 'message',
+            'label' => ' ',
+            'text' => ' ',
+          ),
+        ),
+      ),    
+      1 =>
+      array (
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'MENU MEDIA',
         'text' => 'Menampilkan Menu Media',
         'defaultAction' =>
@@ -548,10 +570,10 @@ if ($command == '#menu') {
           ),
         ),
       ),
-      1 =>
+      2 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'DEFINISI',
         'text' => 'Menampilkan definisi',
         'defaultAction' =>
@@ -565,15 +587,15 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
+            'label' => 'KLIK',
             'text' => '#definisi botak',
           ),
         ),
       ),
-      2 =>
+      3 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'PLAYSTORE',
         'text' => 'Mencari isi PlayStore',
         'defaultAction' =>
@@ -587,15 +609,15 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
+            'label' => 'KLIK',
             'text' => '#playstore moba analog ',
           ),
         ),
       ),
-      3 =>
+      4 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'GOOGLE IMAGE',
         'text' => 'Menampilkan gambar dari Google',
         'defaultAction' =>
@@ -609,15 +631,15 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
+            'label' => 'KLIK',
             'text' => '#carigambar sarahvilo',
           ),
         ),
       ),
-      4 =>
+      5 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'TIME',
         'text' => 'Menampilkan Waktu saat ini',
         'defaultAction' =>
@@ -631,15 +653,15 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
+            'label' => 'KLIK',
             'text' => '#waktu depok',
           ),
         ),
       ),
-      5 =>
+      6 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'PRAYTIME',
         'text' => 'Menampilkan Jadwal Waktu Sholat',
         'defaultAction' =>
@@ -653,15 +675,15 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
+            'label' => 'KLIK',
             'text' => '#jshalat depok',
           ),
         ),
       ),
-      6 =>
+      7 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'CUACA',
         'text' => 'Menampilkan Cuaca Dini Hari',
         'defaultAction' =>
@@ -680,10 +702,10 @@ if ($command == '#menu') {
           ),
         ),
       ),
-      7 =>
+      8 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'TV JADWAL',
         'text' => 'Menampilkan Jadwal TV',
         'defaultAction' =>
@@ -697,14 +719,14 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
+            'label' => 'KLIK',
             'text' => '#acaratv',
           ),
         ),
       ),
     ),
     'imageAspectRatio' => 'rectangle',
-    'imageSize' => 'cover',
+    'imageSize' => 'contain',
   ),
 )
 )
@@ -726,13 +748,13 @@ if ($command == '#menumedia') {
       array (
         //'thumbnailImageUrl' => ' ',
         'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'MEDIA',
-        'text' => ' ',
+        'title' => 'MENU MEDIA',
+        'text' => 'Geser untuk intip',
         'defaultAction' =>
         array (
           'type' => 'uri',
           'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
+          'uri' => ' ',
         ),
         'actions' =>
         array (
@@ -761,7 +783,7 @@ if ($command == '#menumedia') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
+            'label' => 'KLIK',
             'text' => '#filminfo warkop dki',
           ),
         ),
@@ -783,7 +805,7 @@ if ($command == '#menumedia') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
+            'label' => 'KLIK',
             'text' => '#youtube sarahvilo',
           ),
         ),
@@ -805,7 +827,7 @@ if ($command == '#menumedia') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
+            'label' => 'KLIK',
             'text' => '#film warkop dki',
           ),
         ),
