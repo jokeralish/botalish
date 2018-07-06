@@ -616,7 +616,7 @@ if ($command == '#menu') {
       ),
       4 =>
       array (
-        'thumbnailImageUrl' => 'http://blog.tracksmart.com/wp-content/uploads/2016/07/Employee-Time-Theft-at-Work-Robbing-Your-Business-LG.jpg.jpg',
+        'thumbnailImageUrl' => 'http://www.cbc.ca/news2/pointofview/Time.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'TIME',
         'text' => 'Menampilkan Waktu saat ini',
