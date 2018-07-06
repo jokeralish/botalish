@@ -298,74 +298,74 @@ function jadwaltv() {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Jadwal Tv 」\n\n";
-    $result .= "\n1) [ Judul ]\n";
+    $result .= "\n 1) [ Judul ]\n";
     $result .= $json['result'][0]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][0]["channelName"];
-    $result .= "Waktu : ";
+    $result .= "\nWaktu : ";
     $result .= $json['result'][0]["jam"];
     
-    $result .= "\n2) [ Judul ]\n";
+    $result .= "\n\n 2) [ Judul ]\n";
     $result .= $json['result'][1]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][1]["channelName"];
-    $result .= "Waktu : ";
+    $result .= "\nWaktu : ";
     $result .= $json['result'][1]["jam"];
     
-    $result .= "\n3) [ Judul ]\n";
+    $result .= "\n\n 3) [ Judul ]\n";
     $result .= $json['result'][2]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][2]["channelName"];
-    $result .= "Waktu : ";
+    $result .= "\nWaktu : ";
     $result .= $json['result'][2]["jam"];
     
-    $result .= "\n4) [ Judul ]\n";
+    $result .= "\n\n 4) [ Judul ]\n";
     $result .= $json['result'][3]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][3]["channelName"];
-    $result .= "Waktu ";
+    $result .= "\nWaktu ";
     $result .= $json['result'][3]["jam"];
     
-    $result .= "\n5) [ Judul ]\n";
+    $result .= "\n\n 5) [ Judul ]\n";
     $result .= $json['result'][4]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][4]["channelName"];
-    $result .= "Waktu : ";
+    $result .= "\nWaktu : ";
     $result .= $json['result'][4]["jam"];
     
-    $result .= "\n6) [ Judul ]\n";
+    $result .= "\n\n 6) [ Judul ]\n";
     $result .= $json['result'][5]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][5]["channelName"];
-    $result .= "Waktu : ";
+    $result .= "\nWaktu : ";
     $result .= $json['result'][5]["jam"];
     
-    $result .= "\n7) [ Judul ]\n";
+    $result .= "\n\n 7) [ Judul ]\n";
     $result .= $json['result'][7]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][7]["channelName"];
-    $result .= "Waktu : ";
+    $result .= "\nWaktu : ";
     $result .= $json['result'][7]["jam"];
     
-    $result .= "\n8) [ Judul ]\n";
+    $result .= "\n\n 8) [ Judul ]\n";
     $result .= $json['result'][8]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][8]["channelName"];
-    $result .= "Waktu : ";
+    $result .= "\nWaktu : ";
     $result .= $json['result'][8]["jam"];
     
-    $result .= "\n9) [ Judul ]\n";
+    $result .= "\n\n 9) [ Judul ]\n";
     $result .= $json['result'][9]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][9]["channelName"];
-    $result .= "Waktu : ";
+    $result .= "\nWaktu : ";
     $result .= $json['result'][9]["jam"];
     
-    $result .= "\n 10) [ Judul ]\n";
+    $result .= "\n\n 10) [ Judul ]\n";
     $result .= $json['result'][10]["acara"];
     $result .= "\n Tv Channel : ";
     $result .= $json['result'][10]["channelName"];
-    $result .= "Waktu : ";
+    $result .= "\nWaktu : ";
     $result .= $json['result'][10]["jam"];
     return $result;
 }
@@ -374,6 +374,7 @@ function shalat($keyword) {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Jadwal Waktu Sholat 」\n\n";
+	  $result .= $json['location']['address'];
 	  $result .= "\n\n Shubuh : ";
 	  $result .= $json['data']['Fajr'];
 	  $result .= "\n Dzuhur : ";
@@ -384,8 +385,7 @@ function shalat($keyword) {
 	  $result .= $json['data']['Maghrib'];
 	  $result .= "\n Isya : ";
 	  $result .= $json['data']['Isha'];
-	  $result .= $json['location']['address'];
-	  $result .= "\nTanggal : ";
+	  $result .= "\n Tanggal : ";
 	  $result .= $json['time']['date'];
     return $result;
 }
