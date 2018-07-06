@@ -1,6 +1,5 @@
 <?php
 /*
-just for fun
 */
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
@@ -51,6 +50,22 @@ function instapoto($keyword) {
     $result = $json['result']['profile_pic_url'];
     return $result;
 }
+
+function fansign($keyword) {
+    $listnya = array(
+	    "https://farzain.xyz//api//premium//fansign//cos/cos%20(1).php?text=" . $keyword . "&apikey=ag73837ung43838383jdhdhd",
+        "https://farzain.xyz//api//premium//fansign//cos/cos%20(2).php?text=" . $keyword . "&apikey=ag73837ung43838383jdhdhd",
+	    "https://farzain.xyz//api//premium//fansign//cos/cos%20(3).php?text=" . $keyword . "&apikey=ag73837ung43838383jdhdhd",
+	    "https://farzain.xyz//api//premium//fansign//cos/cos%20(4).php?text=" . $keyword . "&apikey=ag73837ung43838383jdhdhd",
+	    "https://farzain.xyz//api//premium//fansign//cos/cos%20(5).php?text=" . $keyword . "&apikey=ag73837ung43838383jdhdhd",
+	    "https://farzain.xyz//api//premium//fansign//cos/cos%20(6).php?text=" . $keyword . "&apikey=ag73837ung43838383jdhdhd",
+	    "https://farzain.xyz//api//premium//fansign//cos/cos%20(7).php?text=" . $keyword . "&apikey=ag73837ung43838383jdhdhd",
+	    );
+            $jaws = array_rand($listnya);
+            $result = $listnya[$jaws];
+    return $result;
+}
+
 function film_syn($keyword) {
     $uri = "http://www.omdbapi.com/?t=" . $keyword . '&plot=full&apikey=d5010ffe';
 
@@ -112,6 +127,20 @@ function insta($keyword) {
     $result .= "\nPengikut : ";
     $result .= $json['result']['byline'];
     $result .= "\n\n https://www.instagram.com/" . $keyword;
+    return $result;
+}
+
+function cloud($keyword) {
+    $uri = "https://farzain.xyz/api/premium/soundcloud.php?apikey=ag73837ung43838383jdhdhd&id=" . $keyword;
+    $response = Unirest\Request::get("$uri");
+    $json = json_decode($response->raw_body, true);
+    
+    $result['id']    .= $json['result'][0]['id'];
+    $result['judul'] .= $json['result'][0]['title'];
+    $result['link']  .= $json['result'][0]['url'];
+    $result['audio'] .= $json['result'][0]['url_download'];
+    $result['icon']  .= $json['result'][0]['img'];
+	
     return $result;
 }
 
@@ -865,22 +894,33 @@ if($message['type']=='text') {
         );
     }
 }
-//fitur sound cloud
-//if($message['type']=='text') {
-	//    if ($command == '/soundcloud' || $command == '/Soundcloud') {
-      //  $result = cloud($options);
-    //    $balas = array(
-  //          'replyToken' => $replyToken,
-//            'messages' => array(
-		//    array(
-              //    'type' => 'audio',
-            //      'originalContentUrl' => $result['audio'],
-          //        'duration' => 60000
-        //        )
-      //      )
-    //    );
-  //  }
-//}
+//fitur soundcloud
+if($message['type']=='text') {
+	    if ($command == '#soundcloud' || $command == '#Soundcloud') {
+        $result = cloud($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+		    array(
+                  'type' => 'image',
+                  'originalContentUrl' => $result['icon'],
+                  'previewImageUrl' => $result['icon']
+                ),
+                array(
+                    'type' => 'text',
+                    'text' => 'ID: '.$result['id'].'
+TITLE: '. $result['judul'].'
+URL: '. $result['link']
+                ),
+		    array(
+                  'type' => 'audio',
+                  'originalContentUrl' => $result['audio'],
+                  'duration' => 60000
+                )
+            )
+        );
+    }
+}
 if($message['type']== 'text'){
     $pesan_datang = strtolower($message['text']);
     $filter = explode(' ', $pesan_datang);
@@ -1013,6 +1053,22 @@ Terima Kasih Kepada Allah SWT, Ryndaaaaa, Dan Teman-Teman Di Sekitar Saya!'
 						);
 				
 	}
+}
+//fitur fs
+if($message['type']=='text') {
+	    if ($command == '#fansign') {
+        $result = fansign($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'image',
+                    'originalContentUrl' => $result,
+                    'previewImageUrl' => $result
+                )
+            )
+        );
+    }
 }
 //fitur qr
 if($message['type']=='text') {
