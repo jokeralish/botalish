@@ -746,8 +746,8 @@ if ($command == '#menumedia') {
       ),
       1 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'FILM INFO',
         'text' => 'Menampilkan info film',
         'defaultAction' =>
@@ -768,8 +768,8 @@ if ($command == '#menumedia') {
       ),
       2 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'YOUTUBE VID',
         'text' => 'Menampilkan video video dari youtube',
         'defaultAction' =>
@@ -790,8 +790,8 @@ if ($command == '#menumedia') {
       ),
       3 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'FILM',
         'text' => 'Mencari Film',
         'defaultAction' =>
@@ -812,8 +812,8 @@ if ($command == '#menumedia') {
       ),
       4 =>
       array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
+        //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
         'title' => 'INSTGRAM',
         'text' => 'Instagram acc Info',
         'defaultAction' =>
@@ -834,7 +834,7 @@ if ($command == '#menumedia') {
       ),
     ),
     'imageAspectRatio' => 'rectangle',
-    'imageSize' => 'cover',
+    'imageSize' => 'contain',
   ),
 )
 )
@@ -1062,15 +1062,16 @@ if($message['type']=='text') {
 										'type' => 'text',					
 										'text' => '「 About PUY 」
 
-EN : [ Made by PUY ]
+EN : [ This bot Made by Mkhadaffy ]
 The Beginning of this Bot Comes from Rynda, Im just Reworked This!
 Of Course Special Thanks To Allah SWT, Ryndaaaaa, And the Friends Around Me!
 
-ID : [ Dibuat oleh PUY ]
+ID : [ Bot ini Dibuat oleh Mkhadaffy ]
 Awal Bot Ini Berasal dari Rynda, Saya Hanya Menrakit Ini!
 Terima Kasih Kepada Allah SWT, Rynda, Dan Teman - Teman Di Sekitar Saya!
 
-https://line.me/ti/p/~heefpuy'
+Mkhadaffy : https://line.me/ti/p/~heefpuy
+PUY : https://line.me/ti/p/~@kxh8977j'
 									)
 							)
 						);
