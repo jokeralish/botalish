@@ -530,21 +530,21 @@ if ($command == '#menu') {
       array (
         'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
-        'title' => 'PEMBUAT PUY',
-        'text' => 'KLIK DISINI',
+        'title' => 'MENU MEDIA',
+        'text' => 'Menampilkan Menu Media',
         'defaultAction' =>
         array (
           'type' => 'uri',
           'label' => 'View detail',
-          'uri' => 'https://line.me/ti/p/~heefpuy',
+          'uri' => 'http://heefpuy18.eaters.me/',
         ),
         'actions' =>
         array (
           0 =>
           array (
             'type' => 'message',
-            'label' => 'ABOUT PUY',
-            'text' => '#about',
+            'label' => 'KLIK DISINI',
+            'text' => '#menumedia',
           ),
         ),
       ),
@@ -662,8 +662,8 @@ if ($command == '#menu') {
       array (
         'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
-        'title' => 'YOUTUBE',
-        'text' => 'Menampilkan video video dari youtube',
+        'title' => 'CUACA',
+        'text' => 'Menampilkan Cuaca Dini Hari',
         'defaultAction' =>
         array (
           'type' => 'uri',
@@ -675,34 +675,12 @@ if ($command == '#menu') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
-            'text' => '#youtube sarahvilo',
+            'label' => 'KLIK',
+            'text' => '#cuaca depok',
           ),
         ),
       ),
       7 =>
-      array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
-        'title' => 'FILM',
-        'text' => 'Mencari Film',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
-        'actions' =>
-        array (
-          0 =>
-          array (
-            'type' => 'message',
-            'label' => 'CONTOH',
-            'text' => '#film warkop dki',
-          ),
-        ),
-      ),
-      8 =>
       array (
         'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
@@ -724,28 +702,6 @@ if ($command == '#menu') {
           ),
         ),
       ),
-      9 =>
-      array (
-        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#00FFFF',
-        'title' => 'CUACA',
-        'text' => 'Menampilkan Cuaca',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
-        'actions' =>
-        array (
-          0 =>
-          array (
-            'type' => 'message',
-            'label' => 'CONTOH',
-            'text' => '#cuaca depok',
-          ),
-        ),
-      ),
     ),
     'imageAspectRatio' => 'rectangle',
     'imageSize' => 'cover',
@@ -754,7 +710,7 @@ if ($command == '#menu') {
 )
 );
 }
-if ($command == '#menu2') {
+if ($command == '#menumedia') {
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -768,10 +724,10 @@ if ($command == '#menu2') {
     array (
         0 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'http://cdn2.tstatic.net/jambi/foto/bank/images/12032018_sosial-media_20180312_170957.jpg',
         'imageBackgroundColor' => '#00FFFF',
-        'title' => 'INSTAGRAM',
-        'text' => 'Stalk Instagram Akun',
+        'title' => 'MEDIA',
+        'text' => 'Menu Media',
         'defaultAction' =>
         array (
           'type' => 'uri',
@@ -784,13 +740,13 @@ if ($command == '#menu2') {
           array (
             'type' => 'message',
             'label' => 'CONTOH',
-            'text' => '#instainfo muh.khadaffy',
+            'text' => ' ',
           ),
         ),
       ),
        1 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Blank.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'FILM INFO',
         'text' => 'Menampilkan info film',
@@ -812,10 +768,10 @@ if ($command == '#menu2') {
       ),
       2 =>
       array (
-        'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
+        'thumbnailImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Blank.jpg',
         'imageBackgroundColor' => '#00FFFF',
-        'title' => 'YtVidGet',
-        'text' => 'Mengambil video dari Youtube',
+        'title' => 'YOUTUBE VID',
+        'text' => 'Menampilkan video video dari youtube',
         'defaultAction' =>
         array (
           'type' => 'uri',
@@ -828,7 +784,93 @@ if ($command == '#menu2') {
           array (
             'type' => 'message',
             'label' => 'CONTOH',
-            'text' => '#ytget garox',
+            'text' => '#youtube sarahvilo',
+          ),
+        ),
+      ),      
+      3 =>
+      array (
+        'thumbnailImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Blank.jpg',
+        'imageBackgroundColor' => '#00FFFF',
+        'title' => 'FILM',
+        'text' => 'Mencari Film',
+        'defaultAction' =>
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'http://heefpuy18.eaters.me/',
+        ),
+        'actions' =>
+        array (
+          0 =>
+          array (
+            'type' => 'message',
+            'label' => 'CONTOH',
+            'text' => '#film warkop dki',
+          ),
+        ),
+      ),
+      4 =>
+      array (
+        'thumbnailImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Blank.jpg',
+        'imageBackgroundColor' => '#00FFFF',
+        'title' => 'INSTGRAM',
+        'text' => 'Instagram acc Info',
+        'defaultAction' =>
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'http://heefpuy18.eaters.me/',
+        ),
+        'actions' =>
+        array (
+          0 =>
+          array (
+            'type' => 'message',
+            'label' => 'KLIK',
+            'text' => '#instainfo muh.khadaffy',
+          ),
+        ),
+      ),
+    ),
+    'imageAspectRatio' => 'rectangle',
+    'imageSize' => 'cover',
+  ),
+)
+)
+);
+}
+if ($command == '#about') {
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+          array (
+  'type' => 'template',
+  'altText' => 'Perintah Puy',
+  'template' =>
+  array (
+    'type' => 'carousel',
+    'columns' =>
+    array (
+        0 =>
+      array (
+        'thumbnailImageUrl' => 'http://cdn2.tstatic.net/jambi/foto/bank/images/12032018_sosial-media_20180312_170957.jpg',
+        'imageBackgroundColor' => '#00FFFF',
+        'title' => 'Pembuat PUY',
+        'text' => 'Klik untuk lihat pembuat Puy',
+        'defaultAction' =>
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'https://line.me/ti/p/~heefpuy',
+        ),
+        'actions' =>
+        array (
+          0 =>
+          array (
+            'type' => 'message',
+            'label' => 'KLIK',
+            'text' => '#aboutpuy',
           ),
         ),
       ),
@@ -1010,7 +1052,7 @@ Picture : '.$profil->pictureUrl.'
     }
 }
 if($message['type']=='text') {
-	    if ($command == '#about') {
+	    if ($command == '#aboutpuy') {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -1089,7 +1131,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'iya kak? Ketik #menu dan #menu2 untuk info perintah Puy!, '.$profil->displayName
+                    'text' => 'iya kak? Ketik #menu untuk info perintah Puy atau ketik #about untuk info Puy, '.$profil->displayName
                 )
             )
         );
