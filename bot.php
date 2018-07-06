@@ -72,30 +72,28 @@ function film_syn($keyword) {
     $response = Unirest\Request::get("$uri");
 
     $json = json_decode($response->raw_body, true);
-    $result = "Judul : \n";
+    $result = "「Judul」 \n";
 	$result .= $json['Title'];
-	$result .= "\n\nSinopsis : \n";
+	$result .= "\n\n「Sinopsis」 \n";
 	$result .= $json['Plot'];
     return $result;
 }
 function film($keyword) {
     $uri = "http://www.omdbapi.com/?t=" . $keyword . '&plot=full&apikey=d5010ffe';
-
     $response = Unirest\Request::get("$uri");
-
     $json = json_decode($response->raw_body, true);
     $result = " 「 FILM 」\n\n";
-    $result = "Judul : ";
+    $result = "「Judul」 : ";
 	$result .= $json['Title'];
-	$result .= "\nRilis pada : ";
+	$result .= "\n「Rilis pada」 ";
 	$result .= $json['Released'];
-	$result .= "\nTipe : ";
+	$result .= "\n「Tipe」 ";
 	$result .= $json['Genre'];
-	$result .= "\nPemain : ";
+	$result .= "\n「Pemain」 ";
 	$result .= $json['Actors'];
-	$result .= "\nBahasa : ";
+	$result .= "\n「Bahasa」 ";
 	$result .= $json['Language'];
-	$result .= "\nDari negara : ";
+	$result .= "\n「Dari negara」 ";
 	$result .= $json['Country'];
     return $result;
 }
@@ -103,13 +101,13 @@ function ytdownload($keyword) {
     $uri = "http://wahidganteng.ga/process/api/b82582f5a402e85fd189f716399bcd7c/youtube-downloader?url=" . $keyword;
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
-    $result = "-Judul : \n";
+    $result = "「Judul」 \n";
 	$result .= $json['title'];
-	$result .= "\n-Type : ";
+	$result .= "\n「Type」 ";
 	$result .= $json['data']['type'];
-	$result .= "\n-Ukuran : ";
+	$result .= "\n「Ukuran」 ";
 	$result .= $json['data']['size'];
-	$result .= "\n-Alamat : ";
+	$result .= "\n「Alamat」 ";
 	$result .= $json['data']['link'];
     return $result;
 }
@@ -118,13 +116,11 @@ function insta($keyword) {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 INFO INSTAGRAM 」\n\n";
-    $result .= "DisplayName : ";
+    $result .= "「DisplayName」 ";
     $result .= $json['result']['full_name'];
-    $result .= "\nUserName : ";
+    $result .= "\n「UserName」 ";
     $result .= $json['result']['username'];
-    $result .= "\nPrivasi : ";
-    $result .= $json['result']['is_private'];
-    $result .= "\nPengikut : ";
+    $result .= "\n「Pengikut」 ";
     $result .= $json['result']['byline'];
     $result .= "\n\n https://www.instagram.com/" . $keyword;
     return $result;
@@ -149,36 +145,18 @@ function youtubelist($keyword) {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $parsed = " 「 YOUTUBE LIST 」\n\n";
-    $parsed .= "ID: ";
-    $parsed .= $json['result'][0]['id'];
-    $parsed .= "\nJUDUL\n";
+    $parsed .= "\n\n「JUDUL VID」";
     $parsed .= $json['result'][0]['title'];
-    $parsed .= "\nURL\n";
+    $parsed .= "\n「URL VID」\n";
     $parsed .= $json['result'][0]['link'];
-    $parsed .= "\n\nID: ";
-    $parsed .= $json['result'][1]['id'];
-    $parsed .= "\nJUDUL\n";
+    $parsed .= "「ID VID」 ";
+    $parsed .= $json['result'][0]['id'];
+    $parsed .= "\n\n「JUDUL VID」";
     $parsed .= $json['result'][1]['title'];
-    $parsed .= "\nURL\n";
+    $parsed .= "\n「URL VID」\n";
     $parsed .= $json['result'][1]['link'];
-    $parsed .= "\n\nID: ";
-    $parsed .= $json['result'][2]['id'];
-    $parsed .= "\nJUDUL\n";
-    $parsed .= $json['result'][2]['title'];
-    $parsed .= "\nURL\n";
-    $parsed .= $json['result'][2]['link'];
-    $parsed .= "\n\nID: ";
-    $parsed .= $json['result'][3]['id'];
-    $parsed .= "\nJUDUL\n";
-    $parsed .= $json['result'][3]['title'];
-    $parsed .= "\nURL\n";
-    $parsed .= $json['result'][3]['link'];
-    $parsed .= "\n\nID: ";
-    $parsed .= $json['result'][4]['id'];
-    $parsed .= "\nJUDUL\n";
-    $parsed .= $json['result'][4]['title'];
-    $parsed .= "\nURL\n";
-    $parsed .= $json['result'][4]['link'];
+    $parsed .= "「ID VID」 ";
+    $parsed .= $json['result'][1]['id'];    
     return $parsed;
 }
 
@@ -206,7 +184,7 @@ function urb_dict($keyword) {
 
     $json = json_decode($response->raw_body, true);
     $result = $json['list'][0]['definition'];
-    $result .= "\n\nContoh : \n";
+    $result .= "\n\n「Contoh」 \n";
     $result .= $json['list'][0]['example'];
     return $result;
 }
@@ -217,15 +195,15 @@ function qrcode($keyword) {
 }
 
 function quotes($keyword) {
-    $uri = "http://quotes.rest/qod.json?category=" . $keyword;
+    $uri = "https://botfamily.faith/api/quotes/?apikey=beta" . $keyword;
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
-    $result = "Result : ";
-	$result .= $json['success']['total'];
-	$result .= "\n-Quotes : ";
-	$result .= $json['contents']['quotes']['quote'];
-	$result .= "\n-Author : ";
-	$result .= $json['contents']['quotes']['author'];
+	$result .= "\n「Quotes」 ";
+	$result .= $json["result"]["quote"];
+	$result .= "\n「Pembuat」 ";
+	$result .= $json["result"]["author"];
+    $result.= "\n「Kategori」 ";
+    $result .= $json["result"]["category"];
     return $result;
 }
 
@@ -301,18 +279,17 @@ function ps($keyword) {
     $response = Unirest\Request::get("$uri"); 
  
     $json = json_decode($response->raw_body, true); 
-    $result .= "-Nama : ";
+    $result .= "「 Nama 」 ";
     $result .= $json['text']['0'];
-    $result .= "\n-Link: ";
+    $result .= "\n「 Link 」 ";
     $result .= "https://play.google.com/store/search?q=" . $keyword . "";
-    $result .= "\n\nPencarian : PlayStore";
     return $result; 
 }
 
 function manga_syn($title) {
     $parsed = manga($title);
-    $result = "-Judul : " . $parsed['title'];
-    $result .= "\n\n-Sinopsis :\n" . $parsed['synopsis'];
+    $result = "「 Judul 」 " . $parsed['title'];
+    $result .= "\n\n「 Sinopsis 」\n" . $parsed['synopsis'];
     return $result;
 }
 
@@ -321,84 +298,75 @@ function jadwaltv() {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Jadwal Tv 」\n\n";
-    $result .= "Waktu :";
-    $result .= $json['result'][0]["jam"];
-    $result .= "\n[ Judul ]\n";
+    $result .= "[ Judul ]\n";
     $result .= $json['result'][0]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
+    $result .= "\n Tv Channel : ";
     $result .= $json['result'][0]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][1]["jam"];
-    $result .= "\n[ Judul ]\n";
+    $result .= "Waktu : ";
+    $result .= $json['result'][0]["jam"];
+    
+    $result .= "[ Judul ]\n";
     $result .= $json['result'][1]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
+    $result .= "\n Tv Channel : ";
     $result .= $json['result'][1]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][2]["jam"];
-    $result .= "\n[ Judul ]\n";
+    $result .= "Waktu : ";
+    $result .= $json['result'][1]["jam"];
+    
+    $result .= "[ Judul ]\n";
     $result .= $json['result'][2]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
+    $result .= "\n Tv Channel : ";
     $result .= $json['result'][2]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][3]["jam"];
-    $result .= "\n[ Judul ]\n";
+    $result .= "Waktu : ";
+    $result .= $json['result'][2]["jam"];
+    
+    $result .= "[ Judul ]\n";
     $result .= $json['result'][3]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
+    $result .= "\n Tv Channel : ";
     $result .= $json['result'][3]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][4]["jam"];
-    $result .= "\n[ Judul ]\n";
+    $result .= "Waktu ";
+    $result .= $json['result'][3]["jam"];
+    
+    $result .= "[ Judul ]\n";
     $result .= $json['result'][4]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
+    $result .= "\n Tv Channel : ";
     $result .= $json['result'][4]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][5]["jam"];
-    $result .= "\n[ Judul ]\n";
+    $result .= "Waktu : ";
+    $result .= $json['result'][4]["jam"];
+    
+    $result .= "[ Judul ]\n";
     $result .= $json['result'][5]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
+    $result .= "\n Tv Channel : ";
     $result .= $json['result'][5]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][6]["jam"];
-    $result .= "\n[ Judul ]\n";
-    $result .= $json['result'][6]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
-    $result .= $json['result'][6]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][7]["jam"];
-    $result .= "\n[ Judul ]\n";
+    $result .= "Waktu : ";
+    $result .= $json['result'][5]["jam"];
+    
+    $result .= "[ Judul ]\n";
     $result .= $json['result'][7]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
+    $result .= "\n Tv Channel : ";
     $result .= $json['result'][7]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][8]["jam"];
-    $result .= "\n[ Judul ]\n";
+    $result .= "Waktu : ";
+    $result .= $json['result'][7]["jam"];
+    
+    $result .= "[ Judul ]\n";
     $result .= $json['result'][8]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
+    $result .= "\n Tv Channel : ";
     $result .= $json['result'][8]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][9]["jam"];
-    $result .= "\n[ Judul ]\n";
+    $result .= "Waktu : ";
+    $result .= $json['result'][8]["jam"];
+    
+    $result .= "[ Judul ]\n";
     $result .= $json['result'][9]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
+    $result .= "\n Tv Channel : ";
     $result .= $json['result'][9]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][10]["jam"];
-    $result .= "\n[ Judul ]\n";
+    $result .= "Waktu : ";
+    $result .= $json['result'][9]["jam"];
+    
+    $result .= "[ Judul ]\n";
     $result .= $json['result'][10]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
+    $result .= "\n Tv Channel : ";
     $result .= $json['result'][10]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][11]["jam"];
-    $result .= "\n[ Judul ]\n";
-    $result .= $json['result'][11]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
-    $result .= $json['result'][11]["channelName"];
-    $result .= "\n\nWaktu :";
-    $result .= $json['result'][12]["jam"];
-    $result .= "\n[ Judul ]\n";
-    $result .= $json['result'][12]["acara"];
-    $result .= "\n[ CHANNEL ]\n";
-    $result .= $json['result'][12]["channelName"];
+    $result .= "Waktu : ";
+    $result .= $json['result'][10]["jam"];
     return $result;
 }
 function shalat($keyword) {
@@ -407,17 +375,17 @@ function shalat($keyword) {
     $json = json_decode($response->raw_body, true);
     $result = " 「 Jadwal Waktu Sholat 」\n\n";
 	  $result .= $json['location']['address'];
-	  $result .= "\nTanggal : ";
+	  $result .= "\n Tanggal : ";
 	  $result .= $json['time']['date'];
-	  $result .= "\n\nShubuh : ";
+	  $result .= "\n\n Shubuh : ";
 	  $result .= $json['data']['Fajr'];
-	  $result .= "\nDzuhur : ";
+	  $result .= "\n Dzuhur : ";
 	  $result .= $json['data']['Dhuhr'];
-	  $result .= "\nAshar : ";
+	  $result .= "\n Ashar : ";
 	  $result .= $json['data']['Asr'];
-	  $result .= "\nMaghrib : ";
+	  $result .= "\n Maghrib : ";
 	  $result .= $json['data']['Maghrib'];
-	  $result .= "\nIsya : ";
+	  $result .= "\n Isya : ";
 	  $result .= $json['data']['Isha'];
     return $result;
 }
@@ -426,11 +394,11 @@ function cuaca($keyword) {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Cuaca 」 ";
-    $result .= "\n\nNama kota:";
+    $result .= "\n\nNama kota: ";
 	  $result .= $json['name'];
-	  $result .= "\n\nCuaca : ";
+	  $result .= "\n Cuaca : ";
 	  $result .= $json['weather']['0']['main'];
-	  $result .= "\nDeskripsi : ";
+	  $result .= "\n Deskripsi : ";
 	  $result .= $json['weather']['0']['description'];
     return $result;
 }
@@ -439,13 +407,13 @@ function waktu($keyword) {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Waktu 」 ";
-    $result .= "\nLokasi : ";
+    $result .= "\n Lokasi : ";
 	$result .= $json['location']['address'];
-	$result .= "\nJam : ";
+	$result .= "\n Jam : ";
 	$result .= $json['time']['time'];
-	$result .= "\nSunrise : ";
+	$result .= "\n Sunrise : ";
 	$result .= $json['debug']['sunrise'];
-	$result .= "\nSunset : ";
+	$result .= "\n Sunset : ";
 	$result .= $json['debug']['sunset'];
     return $result;
 }
