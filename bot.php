@@ -727,7 +727,7 @@ if ($command == '#menumedia') {
         'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'MEDIA',
-        'text' => 'Menu Media',
+        'text' => '',
         'defaultAction' =>
         array (
           'type' => 'uri',
@@ -739,7 +739,7 @@ if ($command == '#menumedia') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'CONTOH',
+            'label' => '',
             'text' => ' ',
           ),
         ),
@@ -876,7 +876,7 @@ if ($command == '#about') {
       ),
     ),
     'imageAspectRatio' => 'rectangle',
-    'imageSize' => 'cover',
+    'imageSize' => 'contain',
   ),
 )
 )
@@ -1068,7 +1068,9 @@ Of Course Special Thanks To Allah SWT, Ryndaaaaa, And the Friends Around Me!
 
 ID : [ Dibuat oleh PUY ]
 Awal Bot Ini Berasal dari Rynda, Saya Hanya Menrakit Ini!
-Terima Kasih Kepada Allah SWT, Rynda, Dan Teman - Teman Di Sekitar Saya!'
+Terima Kasih Kepada Allah SWT, Rynda, Dan Teman - Teman Di Sekitar Saya!
+
+https://line.me/ti/p/~heefpuy'
 									)
 							)
 						);
