@@ -758,7 +758,7 @@ if ($command == '#menumedia') {
         array (
           0 =>
           array (
-            'type' => ' ',
+            'type' => 'message',
             'label' => ' ',
             'text' => ' ',
           ),
