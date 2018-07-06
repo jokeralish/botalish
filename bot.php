@@ -536,7 +536,7 @@ if ($command == '#menu') {
         array (
           'type' => 'uri',
           'label' => 'View detail',
-          'uri' => ' ',
+          'uri' => 'http://heefpuy18.eaters.me/',
         ),
         'actions' =>
         array (
@@ -754,7 +754,7 @@ if ($command == '#menumedia') {
         array (
           'type' => 'uri',
           'label' => 'View detail',
-          'uri' => ' ',
+          'uri' => 'http://heefpuy18.eaters.me/',
         ),
         'actions' =>
         array (
