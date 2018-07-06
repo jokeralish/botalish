@@ -96,6 +96,17 @@ function film($keyword) {
 	$result .= $json['Country'];
     return $result;
 }
+function twitter($keyword) {
+    $uri = "https://farzain.xyz/api/twitter.php?apikey=9YzAAXsDGYHWFRf6gWzdG5EQECW7oo&id=";
+    $response = Unirest\Request::get("$uri");
+    $json = json_decode($response->raw_body, true);
+    $result = "「Twitter Result」\n\n";
+    $result .= "「DisplayName」 ";
+    $result .= $json[0]['user']['name'];
+    $result .= "「UserName」 ";
+    $result .= $json[0]['user']['screen_name'];
+    return $result;
+}
 function ytdownload($keyword) {
     $uri = "http://wahidganteng.ga/process/api/b82582f5a402e85fd189f716399bcd7c/youtube-downloader?url=" . $keyword;
     $response = Unirest\Request::get("$uri");
@@ -394,11 +405,11 @@ function cuaca($keyword) {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Cuaca 」 ";
-    $result .= "\n\n Nama kota : ";
+    $result .= "\n\n 「Nama kota」 ";
 	  $result .= $json['name'];
-	  $result .= "\n Cuaca : ";
+	  $result .= "\n 「Cuaca」 ";
 	  $result .= $json['weather']['0']['main'];
-	  $result .= "\n Deskripsi : ";
+	  $result .= "\n 「Deskripsi」 ";
 	  $result .= $json['weather']['0']['description'];
     return $result;
 }
@@ -407,14 +418,14 @@ function waktu($keyword) {
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Waktu 」 ";
-    $result .= "\n Lokasi : ";
-	$result .= $json['location']['address'];
-	$result .= "\n Jam : ";
+	$result .= "\n\n 「Wib」 ";
 	$result .= $json['time']['time'];
-	$result .= "\n Sunrise : ";
+	$result .= "\n 「Sunrise」 ";
 	$result .= $json['debug']['sunrise'];
-	$result .= "\n Sunset : ";
+	$result .= "\n 「Sunset」 ";
 	$result .= $json['debug']['sunset'];
+    $result .= "\n 「Di」 \n";
+	$result .= $json['location']['address'];
     return $result;
 }
 function qibla($keyword) { 
@@ -687,7 +698,7 @@ if ($command == '#menu') {
           array (
             'type' => 'message',
             'label' => 'CONTOH',
-            'text' => '#film kuntilanak',
+            'text' => '#film warkop dki',
           ),
         ),
       ),
@@ -709,7 +720,7 @@ if ($command == '#menu') {
           array (
             'type' => 'message',
             'label' => 'CONTOH',
-            'text' => '#jadwaltv',
+            'text' => '#acaratv',
           ),
         ),
       ),
@@ -755,7 +766,7 @@ if ($command == '#menus') {
     'type' => 'carousel',
     'columns' =>
     array (
-        10 =>
+        0 =>
       array (
         'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
         'imageBackgroundColor' => '#00FFFF',
@@ -777,7 +788,7 @@ if ($command == '#menus') {
           ),
         ),
       ),
-       11 =>
+       1 =>
       array (
         'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
         'imageBackgroundColor' => '#00FFFF',
@@ -799,7 +810,7 @@ if ($command == '#menus') {
           ),
         ),
       ),
-      12 =>
+      2 =>
       array (
         'thumbnailImageUrl' => 'https://em.wattpad.com/49d77b703d641e9ce98fd54cdf88b622f9de1124/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f4161326e596176346b465972513d3d2d31382e313463613930336637373331356434303737373632383633363835362e6a7067?s=fit&w=720&h=720',
         'imageBackgroundColor' => '#00FFFF',
@@ -1278,7 +1289,7 @@ if($message['type']=='text') {
 }
 
 if($message['type']=='text') {
-	    if ($command == '#jadwaltv') {
+	    if ($command == '#acaratv') {
         $result = jadwaltv();
         $balas = array(
             'replyToken' => $replyToken,
@@ -1306,7 +1317,21 @@ if($message['type']=='text') {
         );
     }
 }
-
+//fitur twitt
+if($message['type']=='text') {
+	    if ($command == '/twitter') {
+        $result = twitter($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => $result
+                )
+            )
+        );
+    }
+}
 //fitur cuaca
 if($message['type']=='text') {
 	    if ($command == '#cuaca') {
