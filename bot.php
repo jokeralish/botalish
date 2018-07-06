@@ -716,7 +716,7 @@ if ($command == '#menumedia') {
         'messages' => array(
           array (
   'type' => 'template',
-  'altText' => 'Perintah Puy',
+  'altText' => 'MenuMedia Puy',
   'template' =>
   array (
     'type' => 'carousel',
@@ -724,7 +724,7 @@ if ($command == '#menumedia') {
     array (
         0 =>
       array (
-        'thumbnailImageUrl' => 'http://cdn2.tstatic.net/jambi/foto/bank/images/12032018_sosial-media_20180312_170957.jpg',
+        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'MEDIA',
         'text' => 'Menu Media',
@@ -744,9 +744,9 @@ if ($command == '#menumedia') {
           ),
         ),
       ),
-       1 =>
+      1 =>
       array (
-        'thumbnailImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Blank.jpg',
+        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'FILM INFO',
         'text' => 'Menampilkan info film',
@@ -768,7 +768,7 @@ if ($command == '#menumedia') {
       ),
       2 =>
       array (
-        'thumbnailImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Blank.jpg',
+        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'YOUTUBE VID',
         'text' => 'Menampilkan video video dari youtube',
@@ -790,7 +790,7 @@ if ($command == '#menumedia') {
       ),      
       3 =>
       array (
-        'thumbnailImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Blank.jpg',
+        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'FILM',
         'text' => 'Mencari Film',
@@ -812,7 +812,7 @@ if ($command == '#menumedia') {
       ),
       4 =>
       array (
-        'thumbnailImageUrl' => 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Blank.jpg',
+        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'INSTGRAM',
         'text' => 'Instagram acc Info',
@@ -846,7 +846,7 @@ if ($command == '#about') {
         'messages' => array(
           array (
   'type' => 'template',
-  'altText' => 'Perintah Puy',
+  'altText' => 'About Puy',
   'template' =>
   array (
     'type' => 'carousel',
@@ -854,7 +854,7 @@ if ($command == '#about') {
     array (
         0 =>
       array (
-        'thumbnailImageUrl' => 'http://cdn2.tstatic.net/jambi/foto/bank/images/12032018_sosial-media_20180312_170957.jpg',
+        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#00FFFF',
         'title' => 'Pembuat PUY',
         'text' => 'Klik untuk lihat pembuat Puy',
