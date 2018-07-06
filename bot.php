@@ -724,7 +724,7 @@ if ($command == '#menumedia') {
     array (
         0 =>
       array (
-        'thumbnailImageUrl' => ' ',
+        //'thumbnailImageUrl' => ' ',
         'imageBackgroundColor' => '#FFFFFF',
         'title' => 'MEDIA',
         'text' => ' ',
@@ -854,7 +854,7 @@ if ($command == '#about') {
     array (
         0 =>
       array (
-        'thumbnailImageUrl' => ' ',
+        //'thumbnailImageUrl' => ' ',
         'imageBackgroundColor' => '#FFFFFF',
         'title' => 'Pembuat PUY',
         'text' => 'Klik untuk lihat pembuat Puy',
