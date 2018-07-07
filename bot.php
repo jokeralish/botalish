@@ -137,7 +137,7 @@ function insta($keyword) {
 }
 
 function cloud($keyword) {
-    $uri = "https://farzain.xyz/api/premium/soundcloud.php?apikey=ag73837ung43838383jdhdhd&id=" . $keyword;
+    $uri = "https://farzain.xyz/api/premium/soundcloud.php?apikey=URgHXv1R5zqVz4v9BLE8tb9r5&id=" . $keyword;
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     
@@ -409,6 +409,23 @@ function cuaca($keyword) {
 	  $result .= $json['weather']['0']['main'];
 	  $result .= "\n ➥「Deskripsi」 ";
 	  $result .= $json['weather']['0']['description'];
+    return $result;
+}
+function weatherr($keyword) {
+    $uri = "http://api.farzain.com/cuaca.php?id=bandung&apikey=URgHXv1R5zqVz4v9BLE8tb9r5" . $keyword;
+    $response = Unirest\Request::get("$uri");
+    $json = json_decode($response->raw_body, true);
+    $result = " 「 Cuaca 」 ";
+    $result .= "\n ➥「Nama kota」 ";
+	  $result .= $json['tempat'];
+	  $result .= "\n ➥「Cuaca」 ";
+	  $result .= $json['weather']['0']['cuaca'];
+	  $result .= "\n ➥「Deskripsi」 ";
+	  $result .= $json['weather']['0']['deskripsi'];
+	  $result .= "\n ➥「Suhu」 ";
+	  $result .= $json['weather']['0']['suhu'];
+	  $result .= "\n ➥「Udara」 ";
+	  $result .= $json['weather']['0']['udara'];
     return $result;
 }
 function waktu($keyword) {
@@ -1109,8 +1126,8 @@ if($message['type']=='text') {
 										'type' => 'text',					
 										'text' => '「 Ask a Problem 」
 
-[EN : Jika ada yang ingin ditanyakan bisa hubungi admin / komen di postingan akhir]
-[ID : If Anyone Wants to be Asked Can contact the Admin / Comment in the Last Post]
+➥[EN : Jika ada yang ingin ditanyakan bisa hubungi admin / komen di postingan akhir]
+➥[ID : If Anyone Wants to be Asked Can contact the Admin / Comment in the Last Post]
 
 Mkhadaffy : https://line.me/ti/p/~heefpuy
 PUY : https://line.me/ti/p/~@kxh8977j
@@ -1435,7 +1452,21 @@ if($message['type']=='text') {
         );
     }
 }
-
+//fitur cuaca2
+if($message['type']=='text') {
+	    if ($command == '#weather') {
+        $result = weatherr($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => $result
+                )
+            )
+        );
+    }
+}
 if (isset($balas)) {
     $result = json_encode($balas);
 //$result = ob_get_clean();
