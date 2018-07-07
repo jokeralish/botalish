@@ -906,13 +906,13 @@ if ($command == '#about') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'KLIK',
+            'label' => 'KLIK DISINI',
             'text' => '#aboutpuy',
           ),
         ),
       ),
     ),
-    'imageAspectRatio' => 'rectangle',
+    'imageAspectRatio' => 'square',
     'imageSize' => 'contain',
   ),
 )
@@ -1108,7 +1108,8 @@ Awal Bot Ini Berasal dari Rynda, Saya Hanya Menrakit Ini!
 Terima Kasih Kepada Allah SWT, Rynda, Dan Teman - Teman Di Sekitar Saya!
 
 Mkhadaffy : https://line.me/ti/p/~heefpuy
-PUY : https://line.me/ti/p/~@kxh8977j'
+PUY : https://line.me/ti/p/~@kxh8977j
+©Heefpuy'
 									)
 							)
 						);
