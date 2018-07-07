@@ -753,7 +753,7 @@ if ($command == '#menumedia') {
         'messages' => array(
           array (
   'type' => 'template',
-  'altText' => '􀬁􀄺young dude􏿿MENU MEDIA PUY',
+  'altText' => 'MENU MEDIA PUY',
   'template' =>
   array (
     'type' => 'carousel',
@@ -763,7 +763,7 @@ if ($command == '#menumedia') {
       array (
         //'thumbnailImageUrl' => ' ',
         'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'MENU MEDIA',
+        'title' => '￼MENU MEDIA￼',
         'text' => 'Geser untuk intip',
         'defaultAction' =>
         array (
@@ -1109,7 +1109,7 @@ Terima Kasih Kepada Allah SWT, Rynda, Dan Teman - Teman Di Sekitar Saya!
 
 Mkhadaffy : https://line.me/ti/p/~heefpuy
 PUY : https://line.me/ti/p/~@kxh8977j
-􀬁􀄺young dude􏿿©Heefpuy'
+￼©Heefpuy'
 									)
 							)
 						);
