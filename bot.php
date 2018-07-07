@@ -1098,6 +1098,29 @@ PUY : https://line.me/ti/p/~@kxh8977j'
 				
 	}
 }
+if($message['type']=='text') {
+	    if ($command == '#issues') {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+
+										'type' => 'text',					
+										'text' => '「 Ask a Problem 」
+
+[EN : Jika ada yang ingin ditanyakan bisa hubungi admin / komen di postingan akhir]
+[ID : If Anyone Wants to be Asked Can contact the Admin / Comment in the Last Post]
+
+Mkhadaffy : https://line.me/ti/p/~heefpuy
+PUY : https://line.me/ti/p/~@kxh8977j
+©Heefpuy'
+									)
+							)
+						);
+				
+	}
+}
 //fitur fs
 if($message['type']=='text') {
 	    if ($command == '#fansign') {
