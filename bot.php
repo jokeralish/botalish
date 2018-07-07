@@ -399,7 +399,7 @@ function shalat($keyword) {
     return $result;
 }
 function cuaca($keyword) {
-    $uri = "http://api.openweathermap.org/data/2.5/weather?q=" . $keyword . ",ID&units=metric&appid=e172c2f3a3c620591582ab5242e0e6c4";
+    $uri = "http://api.openweathermap.org/data/2.5/weather?q=" . $keyword . ",ID&units=metric&appid=e1be858848678c5a3e5915e8a215c665";
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Cuaca 」 ";
@@ -417,15 +417,15 @@ function weatherr($keyword) {
     $json = json_decode($response->raw_body, true);
     $result = " 「 Cuaca 」 ";
     $result .= "\n ➥「Nama kota」 ";
-	  $result .= $json['tempat'];
-	  $result .= "\n ➥「Cuaca」 ";
-	  $result .= $json['weather']['0']['cuaca'];
-	  $result .= "\n ➥「Deskripsi」 ";
-	  $result .= $json['weather']['0']['deskripsi'];
-	  $result .= "\n ➥「Suhu」 ";
-	  $result .= $json['weather']['0']['suhu'];
-	  $result .= "\n ➥「Udara」 ";
-	  $result .= $json['weather']['0']['udara'];
+	$result .= $json['tempat'];
+	$result .= "\n ➥「Cuaca」 ";
+	$result .= $json['result']['200']['cuaca'];
+	$result .= "\n ➥「Deskripsi」 ";
+	$result .= $json['result']['200']['deskripsi'];
+	$result .= "\n ➥「Suhu」 ";
+	$result .= $json['result']['200']['suhu'];
+	$result .= "\n ➥「Udara」 ";
+	$result .= $json['result']['200']['udara'];
     return $result;
 }
 function waktu($keyword) {
