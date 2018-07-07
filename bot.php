@@ -137,7 +137,7 @@ function insta($keyword) {
 }
 
 function cloud($keyword) {
-    $uri = "https://farzain.xyz/api/premium/soundcloud.php?apikey=URgHXv1R5zqVz4v9BLE8tb9r5&id=" . $keyword;
+    $uri = "https://farzain.com/api/premium/soundcloud.php?apikey=URgHXv1R5zqVz4v9BLE8tb9r5&id=" . $keyword;
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     
@@ -412,7 +412,7 @@ function cuaca($keyword) {
     return $result;
 }
 function weatherr($keyword) {
-    $uri = "http://api.farzain.com/cuaca.php?id=bandung&apikey=URgHXv1R5zqVz4v9BLE8tb9r5" . $keyword;
+    $uri = "https://farzain.com/api/cuaca.php?id=bandung&apikey=URgHXv1R5zqVz4v9BLE8tb9r5" . $keyword;
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $result = " 「 Cuaca 」 ";
