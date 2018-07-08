@@ -851,7 +851,7 @@ if ($command == '#menumedia') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'INSTGRAM',
+        'title' => 'INSTAGRAM',
         'text' => 'Instagram acc Info',
         'defaultAction' =>
         array (
@@ -870,7 +870,7 @@ if ($command == '#menumedia') {
         ),
       ),
     ),
-    'imageAspectRatio' => 'rectangle',
+    'imageAspectRatio' => 'square',
     'imageSize' => 'contain',
   ),
 )
@@ -896,12 +896,12 @@ if ($command == '#about') {
         'title' => 'Pembuat PUY',
         'text' => 'Klik untuk lihat pembuat Puy',
         'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'https://line.me/ti/p/~heefpuy',
-        ),
-        'actions' =>
+        //array (
+          //'type' => 'uri',
+          //'label' => 'View detail',
+          //'uri' => 'https://line.me/ti/p/~heefpuy',
+        //),
+        //'actions' =>
         array (
           0 =>
           array (
