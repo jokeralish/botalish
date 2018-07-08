@@ -895,7 +895,7 @@ if ($command == '#about') {
         //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'Pembuat PUY',
         'text' => 'Klik untuk lihat pembuat Puy',
-        'defaultAction' =>
+        //'defaultAction' =>
         //array (
           //'type' => 'uri',
           //'label' => 'View detail',
