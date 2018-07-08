@@ -535,7 +535,7 @@ if ($command == '#menu') {
         'messages' => array(
           array (
   'type' => 'template',
-  'altText' => 'MENU PUY',
+  'altText' => 'Command',
   'template' =>
   array (
     'type' => 'carousel',
@@ -544,15 +544,9 @@ if ($command == '#menu') {
         0 =>
       array (
         //'thumbnailImageUrl' => ' ',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'MENU',
         'text' => 'Geser untuk intip',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -566,15 +560,9 @@ if ($command == '#menu') {
       1 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'MENU MEDIA',
         'text' => 'Menampilkan Menu Media',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -588,15 +576,9 @@ if ($command == '#menu') {
       2 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'DEFINISI',
         'text' => 'Menampilkan definisi',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -610,15 +592,9 @@ if ($command == '#menu') {
       3 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'PLAYSTORE',
         'text' => 'Mencari isi PlayStore',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -632,15 +608,9 @@ if ($command == '#menu') {
       4 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'GOOGLE IMAGE',
         'text' => 'Menampilkan gambar dari Google',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -654,15 +624,9 @@ if ($command == '#menu') {
       5 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'TIME',
         'text' => 'Menampilkan Waktu saat ini',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -676,15 +640,9 @@ if ($command == '#menu') {
       6 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'PRAYTIME',
         'text' => 'Menampilkan Jadwal Waktu Sholat',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -698,15 +656,9 @@ if ($command == '#menu') {
       7 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'CUACA',
         'text' => 'Menampilkan Cuaca Dini Hari',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -720,15 +672,9 @@ if ($command == '#menu') {
       8 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'TV JADWAL',
         'text' => 'Menampilkan Jadwal TV',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -762,15 +708,9 @@ if ($command == '#menumedia') {
         0 =>
       array (
         //'thumbnailImageUrl' => ' ',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => '￼MENU MEDIA￼',
         'text' => 'Geser untuk intip',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -784,15 +724,9 @@ if ($command == '#menumedia') {
       1 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'FILM INFO',
         'text' => 'Menampilkan info film',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -806,15 +740,9 @@ if ($command == '#menumedia') {
       2 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'YOUTUBE VID',
         'text' => 'Menampilkan video video dari youtube',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -828,15 +756,9 @@ if ($command == '#menumedia') {
       3 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'FILM',
         'text' => 'Mencari Film',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
@@ -850,15 +772,9 @@ if ($command == '#menumedia') {
       4 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
+        //'imageBackgroundColor' => '#FFFFFF',
         'title' => 'INSTAGRAM',
         'text' => 'Instagram acc Info',
-        'defaultAction' =>
-        array (
-          'type' => 'uri',
-          'label' => 'View detail',
-          'uri' => 'http://heefpuy18.eaters.me/',
-        ),
         'actions' =>
         array (
           0 =>
