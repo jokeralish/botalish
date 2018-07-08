@@ -877,6 +877,31 @@ if ($command == '#menumedia') {
 )
 );
 }
+if ($command == '#flexx') {
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+          array (  
+  'type': 'flex',
+  'altText': 'this is a flex message'
+  'contents': {
+    'type': 'bubble',
+    'body': {
+      'type': 'box',
+      'layout': 'vertical'
+      'contents': [
+        {
+          'type': 'text',
+          'text': 'hello'
+        },
+        {
+          'type': 'text',
+          'text': 'world'
+        }
+      ]
+    }
+  }
+}
 if ($command == '#about') {
     $balas = array(
         'replyToken' => $replyToken,
@@ -918,6 +943,45 @@ if ($command == '#about') {
 )
 )
 );
+}
+{
+if ($command == '#abouts') {
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+          array (
+  'type': 'template',
+  'altText': 'this is a image carousel template',
+  'template': {
+  array (
+      'type': 'image_carousel',
+      'columns': [
+          {
+            'imageUrl': 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+            'action': {
+              'type': 'postback',
+              'label': 'Buy',
+              'data': 'action=buy&itemid=111'
+            }
+          },
+          {
+            'imageUrl': 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+            'action': {
+              'type': 'message',
+              'label': 'Yes',
+              'text': 'yes'
+            }
+          },
+          {
+            'imageUrl': 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+            'action': {
+              'type': 'uri',
+              'label': 'View detail',
+              'uri': 'https://line.me/ti/p/~heefpuy'
+            }
+          }
+      ]
+  }
 }
 //fitur googlemap
 if($message['type']=='text') {
