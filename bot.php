@@ -877,31 +877,6 @@ if ($command == '#menumedia') {
 )
 );
 }
-if ($command == '#flexx') {
-    $balas = array(
-        'replyToken' => $replyToken,
-        'messages' => array(
-          array (  
-  'type': 'flex',
-  'altText': 'this is a flex message'
-  'contents': {
-    'type': 'bubble',
-    'body': {
-      'type': 'box',
-      'layout': 'vertical'
-      'contents': [
-        {
-          'type': 'text',
-          'text': 'hello'
-        },
-        {
-          'type': 'text',
-          'text': 'world'
-        }
-      ]
-    }
-  }
-}
 if ($command == '#about') {
     $balas = array(
         'replyToken' => $replyToken,
@@ -931,8 +906,13 @@ if ($command == '#about') {
           0 =>
           array (
             'type' => 'message',
-            'label' => 'KLIK DISINI',
-            'text' => '#aboutpuy',
+            'label' => 'hello',
+            'text' => 'hello',
+            'area':{
+               'x':520,
+               'y':0,
+               'width':520,
+               'height':1040
           ),
         ),
       ),
@@ -944,7 +924,6 @@ if ($command == '#about') {
 )
 );
 }
-{
 if ($command == '#abouts') {
     $balas = array(
         'replyToken' => $replyToken,
