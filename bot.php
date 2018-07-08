@@ -919,6 +919,34 @@ if ($command == '#about') {
 )
 );
 }
+if ($command == '#abouts') {
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+          array (
+  'type' => 'template',
+  'altText' => 'this is a confirm template',
+  'template' =>
+  array (
+      'type': 'confirm',
+      'text': 'Are you sure?',
+      'actions' =>
+        array (
+          {
+          0 =>
+          array (
+            'type' => 'message',
+            'label' => 'Yes',
+            'text' => 'Yes',
+          },
+          {
+            "type": "message",
+            "label": "No",
+            "text": "no"
+          }
+      }
+  }
+}
 //fitur googlemap
 if($message['type']=='text') {
 	    if ($command == '#lokasi') {
