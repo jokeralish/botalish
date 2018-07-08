@@ -932,13 +932,11 @@ if ($command == '#abouts') {
       'text': 'Are you sure?',
       'actions' =>
         array (
-          {
           0 =>
           array (
             'type' => 'message',
             'label' => 'Yes',
             'text' => 'Yes',
-          },
           {
             "type": "message",
             "label": "No",
