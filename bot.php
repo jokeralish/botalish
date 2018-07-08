@@ -909,6 +909,7 @@ if ($command == '#about') {
             'label' => 'Tap',
             'text' => '#aboutpuy',
           ),
+        ),
       ),
     ),
     'imageAspectRatio' => 'square',
