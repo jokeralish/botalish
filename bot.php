@@ -901,7 +901,7 @@ if ($command == '#about') {
           //'label' => 'View detail',
           //'uri' => 'https://line.me/ti/p/~heefpuy',
         //),
-        //'actions' =>
+        'actions' =>
         array (
           0 =>
           array (
@@ -909,7 +909,6 @@ if ($command == '#about') {
             'label' => 'Tap',
             'text' => '#aboutpuy',
           ),
-        ),
       ),
     ),
     'imageAspectRatio' => 'square',
