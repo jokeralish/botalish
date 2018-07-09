@@ -547,16 +547,16 @@ if ($type == 'join') {
         'actions' =>
         array (
           0 =>
-          array (
+          array {
             'type' => 'uri',
             'label' => 'Creator',
             'uri' => 'https://line.me/ti/p/~heefpuy',
+          },
           {
             'type' => 'text',
             'label' => 'Perintah',
             'text' => '#menu',
           },
-          ),
         ),
       ),
     ),
