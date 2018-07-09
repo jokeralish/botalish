@@ -583,7 +583,7 @@ if ($command == '#menu') {
       array (
         //'thumbnailImageUrl' => ' ',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'MENU',
+        'title' => '                  MENU',
         'text' => 'Geser untuk intip',
         'actions' =>
         array (
@@ -599,8 +599,8 @@ if ($command == '#menu') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'MENU MEDIA',
-        'text' => ' ',
+        //'title' => 'MENU MEDIA',
+        'text' => 'MENU MEDIA',
         'actions' =>
         array (
           0 =>
@@ -615,8 +615,8 @@ if ($command == '#menu') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'DEFINISI',
-        'text' => ' ',
+        //'title' => 'DEFINISI',
+        'text' => 'DEFINISI',
         'actions' =>
         array (
           0 =>
@@ -631,8 +631,8 @@ if ($command == '#menu') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'PLAYSTORE',
-        'text' => ' ',
+        //'title' => 'PLAYSTORE',
+        'text' => 'PLAYSTORE',
         'actions' =>
         array (
           0 =>
@@ -647,8 +647,8 @@ if ($command == '#menu') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'GOOGLE IMAGE',
-        'text' => ' ',
+        //'title' => 'GOOGLE IMAGE',
+        'text' => 'GOOGLE IMAGE',
         'actions' =>
         array (
           0 =>
@@ -663,8 +663,8 @@ if ($command == '#menu') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'TIME',
-        'text' => ' ',
+        //'title' => 'TIME',
+        'text' => 'TIME',
         'actions' =>
         array (
           0 =>
@@ -679,8 +679,8 @@ if ($command == '#menu') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'PRAYTIME',
-        'text' => ' ',
+        //'title' => 'PRAYTIME',
+        'text' => 'JADWAL WAKTU SHALAT',
         'actions' =>
         array (
           0 =>
@@ -695,8 +695,8 @@ if ($command == '#menu') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'CUACA',
-        'text' => ' ',
+        //'title' => 'CUACA',
+        'text' => 'CUACA',
         'actions' =>
         array (
           0 =>
@@ -711,8 +711,8 @@ if ($command == '#menu') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'TV JADWAL',
-        'text' => ' ',
+        //'title' => 'TV JADWAL',
+        'text' => 'ACARA TV JADWAL',
         'actions' =>
         array (
           0 =>
@@ -763,8 +763,8 @@ if ($command == '#menumedia') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'FILM INFO',
-        'text' => ' ',
+        //'title' => 'FILM INFO',
+        'text' => 'FILM INFO',
         'actions' =>
         array (
           0 =>
@@ -779,8 +779,8 @@ if ($command == '#menumedia') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'YOUTUBE VID',
-        'text' => ' ',
+        //'title' => 'YOUTUBE VID',
+        'text' => 'YOUTUBE VID',
         'actions' =>
         array (
           0 =>
@@ -795,8 +795,8 @@ if ($command == '#menumedia') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'FILM',
-        'text' => ' ',
+        //'title' => 'FILM',
+        'text' => 'FILM',
         'actions' =>
         array (
           0 =>
@@ -811,8 +811,8 @@ if ($command == '#menumedia') {
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'INSTAGRAM',
-        'text' => ' ',
+        //'title' => 'INSTAGRAM',
+        'text' => 'INSTAGRAM',
         'actions' =>
         array (
           0 =>
