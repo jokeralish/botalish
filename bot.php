@@ -151,23 +151,39 @@ function cloud($keyword) {
 }
 
 function youtubelist($keyword) {
-    $uri = "https://ari-api.herokuapp.com/youtube/search?q=" . $keyword;
+    $uri = "http://api.w3hills.com/youtube/search?keyword={}&api_key=86A7FCF3-6CAF-DEB9-E214-B74BDB835B5B" . $keyword;
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $parsed = " 「 YOUTUBE LIST 」\n\n";
     $parsed .= "➥「JUDUL VID」 : \n";
     $parsed .= $json['result'][0]['title'];
-    $parsed .= "\n➥「URL VID」 : ";
-    $parsed .= $json['result'][0]['link'];
-    $parsed .= "\n➥「ID VID」 : ";
-    $parsed .= $json['result'][0]['id'];
+    $parsed .= "\n➥「RELEASE」 : ";
+    $parsed .= $json['publish'][0]['date'];
+    $parsed .= "\n➥「 VIEW 」 : ";
+    $parsed .= $json['stats'][0]['views'];
+    $parsed .= "\n➥「 LIKES 」 : ";
+    $parsed .= $json['stats'][0]['likes'];
+    $parsed .= "\n➥「 DISLIKES 」 : ";
+    $parsed .= $json['stats'][0]['dislikes'];
+    $parsed .= "\n➥「 RATE 」 : ";
+    $parsed .= $json['stats'][0]['rating'];
+    $parsed .= "\n➥「 DESCRIPTION 」 : ";
+    $parsed .= $json['stats'][0]['description'];
     
-    $parsed .= "\n\n➥「JUDUL VID」 : \n";
-    $parsed .= $json['result'][1]['title'];
-    $parsed .= "\n➥「URL VID」 : ";
-    $parsed .= $json['result'][1]['link'];
-    $parsed .= "\n➥「ID VID」 : ";
-    $parsed .= $json['result'][1]['id'];
+    $parsed .= "➥「JUDUL VID」 : \n";
+    $parsed .= $json['result'][0]['title'];
+    $parsed .= "\n➥「RELEASE」 : ";
+    $parsed .= $json['publish'][0]['date'];
+    $parsed .= "\n➥「 VIEW 」 : ";
+    $parsed .= $json['stats'][0]['views'];
+    $parsed .= "\n➥「 LIKES 」 : ";
+    $parsed .= $json['stats'][0]['likes'];
+    $parsed .= "\n➥「 DISLIKES 」 : ";
+    $parsed .= $json['stats'][0]['dislikes'];
+    $parsed .= "\n➥「 RATE 」 : ";
+    $parsed .= $json['stats'][0]['rating'];
+    $parsed .= "\n➥「 DESCRIPTION 」 : ";
+    $parsed .= $json['stats'][0]['description'];
     return $parsed;
 }
 
