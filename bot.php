@@ -534,7 +534,7 @@ if ($type == 'join') {
   'altText' => 'Invited to Group',
   'template' =>
   array (
-    'type' => 'carousel'
+    'type' => 'carousel',
     //'actions' => [],
     'columns' =>
     array (
@@ -560,6 +560,7 @@ if ($type == 'join') {
           ),
         ),
       ),
+      'text': 'About Puy',
     ),
     'imageAspectRatio' => 'square',
     'imageSize' => 'cover',
