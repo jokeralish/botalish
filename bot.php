@@ -551,8 +551,8 @@ if ($type == 'join') {
       )),
     ),
      'text' => 'About Puy',
-  )),
-));
+  ),
+}
 if ($command == '#menu') {
     $balas = array(
         'replyToken' => $replyToken,
