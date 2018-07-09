@@ -516,6 +516,14 @@ function jawabs(){
 # require_once('./src/function/random.php');
 # require_once('./src/function/search-2.php');
 # require_once('./src/function/hard.php');
+          //),
+        //),
+      //),
+            //)
+        //)
+    //);
+//}
+//show menu, saat join dan command /menu
 if ($type == 'join') {
     //$text = "Terimakasih sudah mengundang Puy ke Grup\n\nInfo perintah Puy :\n#menu\n#about\n#myinfo";
     $balas = array(
@@ -526,35 +534,28 @@ if ($type == 'join') {
   'altText' => 'Invited to Group',
   'template' =>
   array (
-    'type' => 'confirm',
-    'actions' =>
+    'type' => 'carousel',
+    'columns' =>
     array (
         0 =>
       array (
         //'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         //'imageBackgroundColor' => '#FFFFFF',
         //'title' => 'Thanks for invited Puy to Group',
-        //'actions' => [
-        'text' => ' ',
+        'text' => 'Thanks for invited Puy to Group',
         'actions' =>
         array (
           0 =>
           array (
-            'type' => 'uri',
-            'label' => 'Creator',
-            'uri' => 'https://line.me/ti/p/~heefpuy',
-          ),
-          (
-            'type' => 'message',
-            'label' => 'About',
-            'text' => '#aboutpuy'
+            'type' => 'text',
+            'label' => 'Perintah',
+            'text' => '#menu',
           ),
         ),
       ),
-      'text': 'About Puy',
     ),
-    //'imageAspectRatio' => 'square',
-    //'imageSize' => 'cover',
+    'imageAspectRatio' => 'square',
+    'imageSize' => 'cover',
   ),
 )
 )
