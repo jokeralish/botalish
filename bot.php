@@ -530,28 +530,32 @@ if ($type == 'join') {
         'replyToken' => $replyToken,
         'messages' => array(
           array (
-   'type' => 'template',
-   'altText' => 'this is a confirm template',
-   'template' => 
+  'type' => 'template',
+  'altText' => 'this is a confirm template',
+  'template' => 
   array(
-     'type' => 'confirm',
-     'actions' => 
-     array (
-         0 => 
-       array(
-         'type' => 'uri',
-         'label' => 'Creator',
-         'uri' => 'https://line.me/ti/p/~heefpuy',
-      )),
-      1 => 
-      array(
-        'type' => 'message',
-        'label' => 'About',
-        'text' => '#aboutpuy',
-      )),
+    'type' => 'confirm',
+    'actions' => 
+    array (
+        0 =>
+      array (
+        'type' => 'uri',
+        'label' => 'Creator',
+        'uri' => 'https://line.me/ti/p/~heefpuy',
+        array (
+          0 =>
+          array (
+            'type' => 'message',
+            'label' => 'About',
+            'text' => '#aboutpuy',
+          ),
+        ),
+      ),
     ),
-    'text' => 'About Puy',
   ),
+  'text' => 'About Puy',
+),
+),
 }
 if ($command == '#menu') {
     $balas = array(
