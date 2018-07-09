@@ -536,21 +536,21 @@ if ($type == 'join') {
   array(
      'type' => 'confirm',
      'actions' => 
-    array (
-      0 => 
-      array(
+     array (
+         0 => 
+       array(
          'type' => 'uri',
          'label' => 'Creator',
          'uri' => 'https://line.me/ti/p/~heefpuy',
       )),
       1 => 
       array(
-         'type' => 'message',
-         'label' => 'About',
-         'text' => '#aboutpuy',
+        'type' => 'message',
+        'label' => 'About',
+        'text' => '#aboutpuy',
       )),
     ),
-     'text' => 'About Puy',
+    'text' => 'About Puy',
   ),
 }
 if ($command == '#menu') {
