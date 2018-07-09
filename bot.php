@@ -583,14 +583,14 @@ if ($command == '#menu') {
       array (
         //'thumbnailImageUrl' => ' ',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => '                  MENU',
-        'text' => 'Geser untuk intip',
+        //'title' => 'MENU',
+        'text' => 'MENU',
         'actions' =>
         array (
           0 =>
           array (
             'type' => 'message',
-            'label' => ' ',
+            'label' => 'Geser',
             'text' => ' ',
           ),
         ),
@@ -747,14 +747,14 @@ if ($command == '#menumedia') {
       array (
         //'thumbnailImageUrl' => ' ',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => '￼MENU MEDIA￼',
-        'text' => 'Geser untuk intip',
+        //'title' => 'MENU MEDIA',
+        'text' => 'MENU MEDIA',
         'actions' =>
         array (
           0 =>
           array (
             'type' => 'message',
-            'label' => ' ',
+            'label' => 'Geser',
             'text' => ' ',
           ),
         ),
