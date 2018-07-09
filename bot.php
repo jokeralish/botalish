@@ -530,17 +530,22 @@ if ($type == 'join') {
         'replyToken' => $replyToken,
         'messages' => array(
             array(
-  "type": "template",
-  "altText": "this is a carousel template",
-  "template": {
-    "type": "carousel",
-    "actions": [],
-    "columns": [
-      {
+  "type" => "template",
+  "altText" => "this is a carousel template",
+  "template" =>
+  array (
+    "type" => "carousel",
+    "actions" => [],
+    "columns" =>
+    array (
+        0 =>
+      array (
         "thumbnailImageUrl": "https://pbs.twimg.com/profile_images/1001808982615277568/EPVaEr4P_400x400.jpg",
-        "text": "Thanks for invited Puy to Group!",
-        "actions": [
-          {
+        "text" => "Thanks for invited Puy to Group!",
+        "actions" => 
+        array (
+          0 =>
+          array (
             "type": "uri",
             "label": "Creator",
             "uri": "https://line.me/ti/p/~heefpuy"
@@ -550,7 +555,7 @@ if ($type == 'join') {
             "label": "Perintah",
             "text": "#menu"
           }
-        ]
+        }
       }
     ]
   }
