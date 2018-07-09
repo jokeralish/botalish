@@ -517,17 +517,49 @@ function jawabs(){
 # require_once('./src/function/search-2.php');
 # require_once('./src/function/hard.php');
 if ($type == 'join') {
-    $text = "Terimakasih sudah mengundang Puy ke Grup\n\nInfo perintah Puy :\n#menu\n#about\n#myinfo";
+    //$text = "Terimakasih sudah mengundang Puy ke Grup\n\nInfo perintah Puy :\n#menu\n#about\n#myinfo";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
             array(
-                'type' => 'text',
-                'text' => $text
-            )
-        )
-    );
+  'type' => 'template',
+  'altText' => 'Invited',
+  'template' =>
+  array (
+    'type' => 'carousel',
+    'actions': [],
+    'columns' [
+    array (
+        0 =>
+      array (
+        'thumbnailImageUrl' => 'https://pbs.twimg.com/profile_images/1001808982615277568/EPVaEr4P_400x400.jpg',
+        //'imageBackgroundColor' => '#FFFFFF',
+        'text' => 'Thanks for invited Puy to Group',
+        'actions': [
+        array (
+          0 =>
+          array (
+            'type' => 'uri',
+            'label' => 'Creator',
+            'uri' => 'https://line.me/ti/p/~heefpuy',
+          //},
+          {
+            'type': 'message',
+            'label': 'Perintah',
+            'text': '#menu'
+          }
+        ]
+      }
+    ]
+  }
 }
+          //),
+        //),
+      //),
+            //)
+        //)
+    //);
+//}
 //show menu, saat join dan command /menu
 if ($command == '#menu') {
     $balas = array(
