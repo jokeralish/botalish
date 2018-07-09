@@ -534,7 +534,8 @@ if ($type == 'join') {
   'altText' => 'Invited to Group',
   'template' =>
   array (
-    'type' => 'carousel',
+    'type' => 'carousel'
+    //'actions' => [],
     'columns' =>
     array (
         0 =>
@@ -554,7 +555,7 @@ if ($type == 'join') {
             'type' => 'text',
             'label' => 'Perintah',
             'text' => '#menu',
-          }
+          },
           ),
         ),
       ),
