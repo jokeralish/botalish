@@ -157,33 +157,17 @@ function youtubelist($keyword) {
     $parsed = " 「 YOUTUBE LIST 」\n\n";
     $parsed .= "➥「JUDUL VID」 : \n";
     $parsed .= $json['result'][0]['title'];
-    $parsed .= "\n➥「RELEASE」 : ";
-    $parsed .= $json['publish'][0]['date'];
-    $parsed .= "\n➥「 VIEW 」 : ";
-    $parsed .= $json['stats'][0]['views'];
-    $parsed .= "\n➥「 LIKES 」 : ";
-    $parsed .= $json['stats'][0]['likes'];
-    $parsed .= "\n➥「 DISLIKES 」 : ";
-    $parsed .= $json['stats'][0]['dislikes'];
-    $parsed .= "\n➥「 RATE 」 : ";
-    $parsed .= $json['stats'][0]['rating'];
-    $parsed .= "\n➥「 DESCRIPTION 」 : ";
-    $parsed .= $json['stats'][0]['description'];
+    $parsed .= "\n➥「URL VID」 : ";
+    $parsed .= $json['result'][0]['link'];
+    $parsed .= "\n➥「ID VID」 : ";
+    $parsed .= $json['result'][0]['id'];
     
-    $parsed .= "➥「JUDUL VID」 : \n";
-    $parsed .= $json['result'][0]['title'];
-    $parsed .= "\n➥「RELEASE」 : ";
-    $parsed .= $json['publish'][0]['date'];
-    $parsed .= "\n➥「 VIEW 」 : ";
-    $parsed .= $json['stats'][0]['views'];
-    $parsed .= "\n➥「 LIKES 」 : ";
-    $parsed .= $json['stats'][0]['likes'];
-    $parsed .= "\n➥「 DISLIKES 」 : ";
-    $parsed .= $json['stats'][0]['dislikes'];
-    $parsed .= "\n➥「 RATE 」 : ";
-    $parsed .= $json['stats'][0]['rating'];
-    $parsed .= "\n➥「 DESCRIPTION 」 : ";
-    $parsed .= $json['stats'][0]['description'];
+    $parsed .= "\n\n➥「JUDUL VID」 : \n";
+    $parsed .= $json['result'][1]['title'];
+    $parsed .= "\n➥「URL VID」 : ";
+    $parsed .= $json['result'][1]['link'];
+    $parsed .= "\n➥「ID VID」 : ";
+    $parsed .= $json['result'][1]['id'];
     return $parsed;
 }
 
@@ -233,10 +217,10 @@ function quotes($keyword) {
 }
 
 function google_image($keyword) {
-    $uri = "https://ari-api.herokuapp.com/images?q=" . $keyword;
+    $uri = "http://rahandiapi.herokuapp.com/imageapi?key=betakey&q=" . $keyword;
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
-    $result = $json['result'][0];	
+    $result = $json['result'][0];
     return $result;
 }
 function image_neon($keyword) {
@@ -557,8 +541,8 @@ if ($type == 'join') {
       array (
         //'thumbnailImageUrl' => ' ',
         //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'Thx for invited Puy to Group!',
-        'text' => ' ',
+        //'title' => 'Thx for invited Puy to Group!',
+        'text' => 'Thx for invited Puy to Group!',
         //'defaultAction' =>
         //array (
           //'type' => 'uri',
