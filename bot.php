@@ -556,6 +556,11 @@ if ($type == 'join') {
             'type' => 'message',
             'label' => 'Perintah',
             'text' => '#menu',
+          (,
+          )
+            'type': 'uri',
+            'label': 'Creator',
+            'uri': 'https://line.me/ti/p/~heefpuy'
           ),
         ),
       ),
