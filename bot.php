@@ -554,8 +554,8 @@ if ($type == 'join') {
         ),
       ),
     ),
-    'imageAspectRatio' => 'rectangle',
-    'imageSize' => 'contain',
+    'imageAspectRatio' => 'square',
+    'imageSize' => 'cover',
   ),
 )
 )
