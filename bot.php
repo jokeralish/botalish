@@ -535,7 +535,7 @@ if ($type == 'join') {
   'template' =>
   array (
     'type' => 'carousel'
-    'actions' => [],
+    //'actions' => [],
     'columns' =>
     array (
         0 =>
