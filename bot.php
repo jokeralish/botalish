@@ -529,36 +529,37 @@ if ($type == 'join') {
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
-            array(
-  "type" => "template",
-  "altText" => "this is a carousel template",
-  "template" =>
+          array (
+  'type' => 'template',
+  'altText' => 'Invited to Group',
+  'template' =>
   array (
-    "type" => "carousel",
-    "actions" => [],
-    "columns" =>
+    'type' => 'carousel',
+    'columns' =>
     array (
         0 =>
       array (
-        "thumbnailImageUrl": "https://pbs.twimg.com/profile_images/1001808982615277568/EPVaEr4P_400x400.jpg",
-        "text" => "Thanks for invited Puy to Group!",
-        "actions" => 
+        'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'Thanks for invited Puy to Group',
+        'text' => ' ',
+        'actions' =>
         array (
           0 =>
           array (
-            "type": "uri",
-            "label": "Creator",
-            "uri": "https://line.me/ti/p/~heefpuy"
-          },
-          {
-            "type": "message",
-            "label": "Perintah",
-            "text": "#menu"
-          }
-        }
-      }
-    ]
-  }
+            'type' => 'uri',
+            'label' => 'Creator',
+            'uri' => 'https://line.me/ti/p/~heefpuy',
+          ),
+        ),
+      ),
+    ),
+    'imageAspectRatio' => 'rectangle',
+    'imageSize' => 'contain',
+  ),
+)
+)
+);
 }
 if ($command == '#menu') {
     $balas = array(
