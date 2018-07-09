@@ -530,43 +530,29 @@ if ($type == 'join') {
         'replyToken' => $replyToken,
         'messages' => array(
           array (
-  'type' => 'template',
-  'altText' => 'Invited to Group',
-  'template' =>
-  array (
-    'type' => 'carousel',
-    'columns' =>
+   'type' => 'template',
+   'altText' => 'this is a confirm template',
+   'template' => 
+  array(
+     'type' => 'confirm',
+     'actions' => 
     array (
-        0 =>
-      array (
-        //'thumbnailImageUrl' => ' ',
-        //'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'Thx for invited Puy to Group!',
-        'text' => ' ',
-        //'defaultAction' =>
-        //array (
-          //'type' => 'uri',
-          //'label' => 'View detail',
-          //'uri' => 'https://line.me/ti/p/~heefpuy',
-        //),
-        'actions' =>
-        array (
-          0 =>
-          array (
-            'type' => 'message',
-            'label' => 'Perintah',
-            'text' => '#menu',
-          ),
-        ),
-      ),
+      0 => 
+      array(
+         'type' => 'uri',
+         'label' => 'Creator',
+         'uri' => 'https://line.me/ti/p/~heefpuy',
+      )),
+      1 => 
+      array(
+         'type' => 'message',
+         'label' => 'About',
+         'text' => '#aboutpuy',
+      )),
     ),
-    'imageAspectRatio' => 'square',
-    'imageSize' => 'contain',
-  ),
-)
-)
-);
-}
+     'text' => 'About Puy',
+  )),
+));
 if ($command == '#menu') {
     $balas = array(
         'replyToken' => $replyToken,
