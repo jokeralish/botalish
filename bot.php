@@ -516,43 +516,6 @@ function jawabs(){
 # require_once('./src/function/random.php');
 # require_once('./src/function/search-2.php');
 # require_once('./src/function/hard.php');
-if ($type == 'join') {
-    //$text = "Terimakasih sudah mengundang Puy ke Grup\n\nInfo perintah Puy :\n#menu\n#about\n#myinfo";
-    $balas = array(
-        'replyToken' => $replyToken,
-        'messages' => array(
-            array(
-  'type' => 'template',
-  'altText' => 'Invited',
-  'template' =>
-  array (
-    'type' => 'carousel',
-    'actions': [],
-    'columns' [
-    array (
-        0 =>
-      array (
-        'thumbnailImageUrl' => 'https://pbs.twimg.com/profile_images/1001808982615277568/EPVaEr4P_400x400.jpg',
-        //'imageBackgroundColor' => '#FFFFFF',
-        'text' => 'Thanks for invited Puy to Group',
-        'actions': [
-        array (
-          0 =>
-          array (
-            'type' => 'uri',
-            'label' => 'Creator',
-            'uri' => 'https://line.me/ti/p/~heefpuy',
-          //},
-          {
-            'type': 'message',
-            'label': 'Perintah',
-            'text': '#menu'
-          }
-        ]
-      }
-    ]
-  }
-}
           //),
         //),
       //),
@@ -561,6 +524,37 @@ if ($type == 'join') {
     //);
 //}
 //show menu, saat join dan command /menu
+if ($type == 'join') {
+    //$text = "Terimakasih sudah mengundang Puy ke Grup\n\nInfo perintah Puy :\n#menu\n#about\n#myinfo";
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+            array(
+  "type": "template",
+  "altText": "this is a carousel template",
+  "template": {
+    "type": "carousel",
+    "actions": [],
+    "columns": [
+      {
+        "thumbnailImageUrl": "https://pbs.twimg.com/profile_images/1001808982615277568/EPVaEr4P_400x400.jpg",
+        "text": "Thanks for invited Puy to Group!",
+        "actions": [
+          {
+            "type": "uri",
+            "label": "Creator",
+            "uri": "https://line.me/ti/p/~heefpuy"
+          },
+          {
+            "type": "message",
+            "label": "Perintah",
+            "text": "#menu"
+          }
+        ]
+      }
+    ]
+  }
+}
 if ($command == '#menu') {
     $balas = array(
         'replyToken' => $replyToken,
