@@ -556,18 +556,21 @@ if ($type == 'join') {
             'type' => 'message',
             'label' => 'Perintah',
             'text' => '#menu',
-          (,
-          )
-            'type': 'uri',
-            'label': 'Creator',
-            'uri': 'https://line.me/ti/p/~heefpuy'
           ),
+        ),
+      array (
+        0 =>
+        array (
+          'type': 'uri',
+          'label': 'Creator',
+          'uri': 'https://line.me/ti/p/~heefpuy'
         ),
       ),
     ),
-    'imageAspectRatio' => 'square',
-    'imageSize' => 'contain',
   ),
+  'imageAspectRatio' => 'square',
+  'imageSize' => 'contain',
+),
 )
 )
 );
