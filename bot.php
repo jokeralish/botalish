@@ -525,37 +525,47 @@ function jawabs(){
 //}
 //show menu, saat join dan command /menu
 if ($type == 'join') {
-    //$text = 'Terimakasih sudah mengundang Puy ke GrupnnInfo perintah Puy :n#menun#aboutn#myinfo';
+    //$text = "Terimakasih sudah mengundang Puy ke Grup\n\nInfo perintah Puy :\n#menu\n#about\n#myinfo";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
           array (
-  'type': 'template',
-  'altText': 'this is a carousel template',
-  'template': {
-    'type': 'carousel',
-    'actions': [],
-    'columns': [
-      {
-        'thumbnailImageUrl': 'https://pbs.twimg.com/profile_images/1001808982615277568/EPVaEr4P_400x400.jpg',
-        'text': 'Thanks for invited Puy to Group!',
-        'actions': [
-          {
-            'type': 'uri',
-            'label': 'Creator',
-            'uri': 'https://line.me/ti/p/~heefpuy'
-          },
-          {
-            'type': 'message',
-            'label': 'Perintah',
-            'text': '#menu'
-          }
-        ]
-      }
-    ]
-  )
+  'type' => 'template',
+  'altText' => 'Invited to Group',
+  'template' =>
+  array (
+    'type' => 'confirm',
+    'columns' =>
+    array (
+        0 =>
+      array (
+        //'thumbnailImageUrl' => ' ',
+        //'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'Thx for invited Puy to Group!',
+        'text' => ' ',
+        //'defaultAction' =>
+        //array (
+          //'type' => 'uri',
+          //'label' => 'View detail',
+          //'uri' => 'https://line.me/ti/p/~heefpuy',
+        //),
+        'actions' =>
+        array (
+          0 =>
+          array (
+            'type' => 'message',
+            'label' => 'Perintah',
+            'text' => '#menu',
+          ),
+        ),
+      ),
+    ),
+    'imageAspectRatio' => 'square',
+    'imageSize' => 'contain',
+  ),
 )
-}
+)
+);
 }
 if ($command == '#menu') {
     $balas = array(
