@@ -545,21 +545,20 @@ if ($type == 'join') {
         'title' => 'Thanks for invited Puy to Group',
         //'actions' => [
         'text' => ' ',
-        'actions' => [
-       array (
+        'actions' =>
+        array (
           0 =>
           array {
             'type' => 'uri',
             'label' => 'Creator',
             'uri' => 'https://line.me/ti/p/~heefpuy',
-           },
-           {
+          },
+          {
             'type' => 'text',
             'label' => 'Perintah',
             'text' => '#menu',
-           },
-        ],
-       ),
+          },
+        ),
       ),
     ),
     'imageAspectRatio' => 'square',
