@@ -535,7 +535,7 @@ if ($type == 'join') {
   'template' =>
   array (
     'type' => 'carousel'
-    //'actions' => [],
+    'actions' => [],
     'columns' =>
     array (
         0 =>
@@ -543,21 +543,23 @@ if ($type == 'join') {
         'thumbnailImageUrl' => 'https://img.buzzfeed.com/buzzfeed-static/static/2016-07/7/15/campaign_images/buzzfeed-prod-web12/i-am-tired-of-watching-black-people-die-2-29975-1467919446-2_dblbig.jpg',
         'imageBackgroundColor' => '#FFFFFF',
         'title' => 'Thanks for invited Puy to Group',
+        //'actions' => [
         'text' => ' ',
-        'actions' =>
-        array (
+        'actions' => [
+       array (
           0 =>
           array {
             'type' => 'uri',
             'label' => 'Creator',
             'uri' => 'https://line.me/ti/p/~heefpuy',
-          },
-          {
+           },
+           {
             'type' => 'text',
             'label' => 'Perintah',
             'text' => '#menu',
-          },
-        ),
+           },
+        ],
+       ),
       ),
     ),
     'imageAspectRatio' => 'square',
