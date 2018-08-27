@@ -5,8 +5,9 @@ Support by : Mastah Ervan
 */
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
-$channelAccessToken = '0lpuUiIxUbiuW/FT+o692TeUWINEAcQ6OMB6AwNEsQEk29ErLyyCFSglnkL7hZkybK7pTMoqgG8GCXFjYRlKO4IvPiebZGmzOzl5yWri74mdxQRlZxHU8Wr7htvNP/ZJ+3IsadRaJAHZXjjzU1djgwdB04t89/1O/w1cDnyilFU='; #ChannelAccessToken (paste token akses kamu disini)
-$channelSecret = '99cc4ccfd8bcbd0c2059306fa026b22a';#Channel Secret (paste token secret kamu disini)
+$channelAccessToken = 'R+/n9P1Ec6a40MsrRodFM7hC8byKPvBO84V8VCjKSO84pxlMBqg7YlV8U+bihOQ+c/OM/yvfDw1Qp1DcrKqAWrsXO1E1rTcGJcq/+edlhxB3t/3PiVWlsIOqLu6icCGEbAoIqkgOKl9BW7Wg5R/p0AdB04t89/1O/w1cDnyilFU=
+'; #ChannelAccessToken (paste token akses kamu disini)
+$channelSecret = 'fb76bc946d6421f5ca5a05bd5debeb7d';#Channel Secret (paste token secret kamu disini)
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $userId 	= $client->parseEvents()[0]['source']['userId'];
 $groupId 	= $client->parseEvents()[0]['source']['groupId'];
@@ -478,7 +479,7 @@ function zodiak($keyword) {
 #-------------------------[Function]-------------------------#
 //show menu, saat join dan command,menu
 if ($type == 'join') {
-    //$text = "Terimakasih sudah mengundang Puy ke Grup\n\nInfo perintah Puy :\n#menu\n#about\n#myinfo";
+    $text = "Terimakasih sudah mengundang Puy ke Grup\n\nInfo perintah Puy :\n#menu\n#about\n#myinfo";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -492,16 +493,16 @@ if ($type == 'join') {
     array (
         0 =>
       array (
-        //'thumbnailImageUrl' => ' ',
-        //'imageBackgroundColor' => '#FFFFFF',
-        //'title' => 'Thx for invited Puy to Group!',
+        'thumbnailImageUrl' => ' ',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'Thx for invited Puy to Group!',
         'text' => 'Thx for invited Puy to Group!',
-        //'defaultAction' =>
-        //array (
-          //'type' => 'uri',
-          //'label' => 'View detail',
-          //'uri' => 'https://line.me/ti/p/~heefpuy',
-        //),
+        'defaultAction' =>
+        array (
+          'type' => 'uri',
+          'label' => 'View detail',
+          'uri' => 'https://line.me/ti/p/~alish-joker',
+        ),
         'actions' =>
         array (
           0 =>
@@ -516,7 +517,7 @@ if ($type == 'join') {
         array (
           'type': 'uri',
           'label': 'Creator',
-          'uri': 'https://line.me/ti/p/~heefpuy'
+          'uri': 'https://line.me/ti/p/~alish-joker'
         ),
       ),
     ),
@@ -568,7 +569,7 @@ if($message['type']=='text') {
                 array(
 										'type' => 'text',					
 										'text' => '「 Creator  」'
-Creator: 'The Beginning of this Bot Comes from Rynda, Im just Reworked This!\n\nOf Course Special Thanks To Rynda And the Friends Around Me.\nCreator -> https://line.me/ti/p/~heefpuy'
+Creator: 'creator by alish joker \n\n\n\n\n\n line id line.me/ti/p/~alish-joker'
 									)
 							)
 						);
@@ -1135,7 +1136,7 @@ if($message['type']=='text') {
           array (
             'type' => 'message',
             'label' => 'Contoh',
-            'text' => '/instagram kamu',
+            'text' => '/instagram id',
           ),
         ),
       ),
